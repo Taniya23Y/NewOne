@@ -11,10 +11,10 @@ export const Header = () => {
         <a href="#" className="nav-items ">
           Project
         </a>
-        <a href="#" className="nav-items ">
+        <a href="#" className="nav-items">
           Skills
         </a>
-        <a href="#" className="nav-items ">
+        <a href="#" className="nav-items hidden sm:inline ">
           Experience
         </a>
         <a
