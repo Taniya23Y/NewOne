@@ -50,7 +50,7 @@ const portfolioProjects = [
       { title: "Designed in Figma and inspired by Dribbble." },
     ],
     projectLink: "https://taste-trek.netlify.app/",
-    githubLink: "https://github.com/taniya23y/TasteTrek-Food-Webiste",
+    githubLink: "https://github.com/taniya23y/TasteTrek-Food-Website",
     image: tasteTrekImg,
   },
 
@@ -129,7 +129,7 @@ export const ProjectsSection = () => {
           description=" See how I transformed concepts into engaging digital experiences."
         />
 
-        <div className="flex flex-col gap-15 mt-10 md:mt-15">
+        <div className="flex flex-col gap-16 mt-10 md:mt-15">
           {portfolioProjects.map((project) => (
             <Card
               key={project.title}
