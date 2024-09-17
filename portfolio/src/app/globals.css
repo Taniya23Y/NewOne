@@ -17,3 +17,7 @@
     @apply lg:max-w-5xl;
   }
 }
+
+.hover\:paused:hover {
+  animation-play-state: paused;
+}

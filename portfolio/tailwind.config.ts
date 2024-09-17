@@ -25,6 +25,27 @@ const config: Config = {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)",
       },
+      animation: {
+        "ping-large": "ping-large 1s ease-in-out infinite",
+        "move-left": "moveLeft linear infinite",
+      },
+      keyframes: {
+        "ping-large": {
+          "75%, 100%": {
+            transform: "scale(3)",
+            opacity: "0",
+          },
+        },
+        moveLeft: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      // Adding animation-play-state utilities
+      animationPlayState: {
+        paused: "paused",
+        running: "running",
+      },
     },
   },
   plugins: [],
