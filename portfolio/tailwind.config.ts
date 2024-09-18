@@ -27,7 +27,8 @@ const config: Config = {
       },
       animation: {
         "ping-large": "ping-large 1s ease-in-out infinite",
-        "move-left": "moveLeft linear infinite",
+        "move-left": "moveLeft 1s linear infinite",
+        "move-right": "moveRight 1s linear infinite",
       },
       keyframes: {
         "ping-large": {
@@ -37,8 +38,12 @@ const config: Config = {
           },
         },
         moveLeft: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-100%)" },
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        moveRight: {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0%)" },
         },
       },
       // Adding animation-play-state utilities
