@@ -8,7 +8,7 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-47 lg:py-51   relative z-0 overflow-x-clip">
+    <div className="py-32 md:py-47 lg:py-51 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -16,14 +16,13 @@ export const HeroSection = () => {
             backgroundImage: `url(${grainImage.src})`,
           }}
         ></div>
-        {/* hero-rings  */}
+        {/* hero-rings */}
         <div className="size-[600px] hero-ring"></div>
         <div className="size-[800px] hero-ring"></div>
         <div className="size-[1000px] hero-ring"></div>
         <div className="size-[1200px] hero-ring"></div>
 
-        {/* hero-stars  */}
-
+        {/* hero-stars */}
         <HeroOrbit
           size={430}
           rotation={-14}
@@ -128,8 +127,8 @@ export const HeroSection = () => {
         </HeroOrbit>
       </div>
 
-      <div className="container">
-        {/* image and green btn  */}
+      <div className="container relative z-10">
+        {/* image and green btn */}
         <div className="flex flex-col items-center">
           <Image
             src={memojImage}
@@ -146,7 +145,7 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        {/* heading and para  */}
+        {/* heading and para */}
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
             Building Exceptional User Experiences
@@ -158,16 +157,26 @@ export const HeroSection = () => {
           </p>
         </div>
 
-        {/* two btn's  */}
+        {/* two btns */}
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+          <a
+            href="https://github.com/taniya23y"
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl text-white bg-transparent"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span className="">👋</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/taniyay"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>👋</span>
             <span className="font-semibold">Let&apos;s Connect</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
