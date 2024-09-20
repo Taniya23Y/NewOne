@@ -138,30 +138,6 @@ export const AboutSection = () => {
           title="A Glimpse Into My World"
           description="Learn more about who I am, What I do, and what inspires me."
         />
-        <div className="flex flex-col justify-center items-center pt-3">
-          <div id="skills">
-            <span className="font-extrabold">What Fires Me Up 🔥 </span>
-          </div>
-          <div>
-            <ul className="list-inside opacity-50 pt-2">
-              <li>
-                <BsArrowRight className="inline-block text-2xl" />{" "}
-                <span className="underline italic">Javascript:</span> My trusty
-                sidekick in building dynamic web applications.
-              </li>
-              <li>
-                <BsArrowRight className="inline-block text-2xl" />{" "}
-                <span className="underline italic">React:</span> Where I weave
-                magic into user interfaces.
-              </li>
-              <li>
-                <BsArrowRight className="inline-block text-2xl" />{" "}
-                <span className="underline italic">UI Development:</span> My
-                canvas for creating pixel-perfect designs.
-              </li>
-            </ul>
-          </div>
-        </div>
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">

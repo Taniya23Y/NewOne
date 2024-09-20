@@ -21,6 +21,11 @@ const config: Config = {
       },
     },
     extend: {
+      colors: {
+        "light-primary-color": "#181818",
+        "dark-primary-color": "#efebeb",
+        "light-secondary-color": "#575757",
+      },
       fontFamily: {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)",

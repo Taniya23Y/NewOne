@@ -1,0 +1,127 @@
+{
+  "skills": {
+    "FrontEndOptions": [
+      {
+        "name": "HTML",
+        "level": 3,
+        "frame": "Language"
+      },
+      {
+        "name": "CSS",
+        "level": 4,
+        "frame": "Language"
+      },
+      {
+        "name": "Tailwind",
+        "level": 3,
+        "frame": "Css Framework"
+      },
+      {
+        "name": "ShadCn",
+        "level": 4,
+        "frame": "Ui Library"
+      },
+      {
+        "name": "Locomotive",
+        "level": 4,
+        "frame": "Ui Library"
+      },
+      {
+        "name": "React Router",
+        "level": 4,
+        "frame": "Library"
+      },
+
+      {
+        "name": "JavaScript",
+        "level": 3,
+        "frame": "Language"
+      },
+      {
+        "name": "ReactJs",
+        "frame": "JavaScript Framework",
+        "level": 5
+      },
+
+      {
+        "name": "TypeScript",
+        "level": 3,
+        "frame": "Language"
+      },
+      {
+        "name": "Redux",
+        "level": 3,
+        "frame": "State Management"
+      },
+      {
+        "name": "Firebase",
+        "level": 3,
+        "frame": "Authentication Library"
+      }
+    ],
+    "BackendOptions": [
+      {
+        "name": "NodeJs",
+        "level": 2,
+        "frame": "JavaScript RunTime"
+      },
+      {
+        "name": "Express",
+        "level": 2,
+        "frame": "NodeJs Framework"
+      },
+      {
+        "name": "MongoDB",
+        "level": 3,
+        "frame": "NoSql Database"
+      },
+      {
+        "name": "JWT",
+        "level": 2,
+        "frame": "Encryption Tool"
+      }
+    ],
+    "ToolsOptions": [
+      {
+        "name": "Git",
+        "level": 3,
+        "frame": "Version Control"
+      },
+      {
+        "name": "Github",
+        "level": 4,
+        "frame": "Version Control"
+      },
+      {
+        "name": "VSCode",
+        "level": 3,
+        "frame": "Code Editor"
+      },
+      {
+        "name": "Figma",
+        "level": 4,
+        "frame": "Design Tool"
+      },
+      {
+        "name": "Vercel",
+        "level": 4,
+        "frame": "Hosting Service"
+      },
+      {
+        "name": "Netlify",
+        "level": 3,
+        "frame": "Hosting Service"
+      },
+      {
+        "name": "Postman",
+        "level": 3,
+        "frame": "Api tool"
+      },
+      {
+        "name": "Notion",
+        "level": 4,
+        "frame": "Note Taking"
+      }
+    ]
+  }
+}
