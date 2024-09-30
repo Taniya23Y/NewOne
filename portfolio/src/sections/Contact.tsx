@@ -54,7 +54,7 @@ export const ContactSection = () => {
                       rel="noopener noreferrer"
                       className="inline-flex gap-1.5 cursor-pointer"
                     >
-                      <span className="font-semibold">{link.title}</span>
+                      <span className="font-semibold z-10">{link.title}</span>
                       <ArrowUpRightIcon className="size-4" />
                     </a>
                   ))}
