@@ -1,3 +1,5 @@
+"use client";
+
 import piyushFolio from "@/assets/images/PortFolio.png";
 import tasteTrekImg from "@/assets/images/TasteTrek.png";
 import eduMeetImg from "@/assets/images/Banner.png";
@@ -9,6 +11,7 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
+import { useSectionInView } from "@/lib/hooks";
 
 const portfolioProjects = [
   {
@@ -119,20 +122,22 @@ const portfolioProjects = [
 ];
 
 export const ProjectsSection = () => {
+  const { ref } = useSectionInView("Projects", 0.5);
+
   return (
-    <section className="pt-9 pb-16 lg:pb-24">
-      <div className="container" id="projects">
+    <section className="pt-16 pb-16 lg:pb-24" ref={ref} id="projects">
+      <div className="container">
         <SectionHeader
           eyebrow="Real-world Results"
           title="Featured Projects"
           description=" See how I transformed concepts into engaging digital experiences."
         />
 
-        <div className="flex flex-col gap-16 mt-10 md:mt-15">
+        <div className="flex flex-col gap-1 pb-20 mt-0 md:mt-1">
           {portfolioProjects.map((project, projectIndex) => (
             <Card
               key={project.title}
-              className=" px-8 pt-8 md:pt-12 md:px-10 pb-0 lg:mt-16 lg:px-20 sticky"
+              className=" px-8 pt-8 md:pt-12 md:px-10 pb-0 lg:mt-16 lg:px-20 "
               style={{
                 top: `calc(64px + ${projectIndex * 30}px)`,
               }}

@@ -24,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="../assets/images/letter-t.png" />
+      </head>
       <body
         className={twMerge(
           inter.variable,
