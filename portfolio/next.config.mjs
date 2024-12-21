@@ -43,6 +43,9 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    domains: ["api.microlink.io"],
+  },
 };
 
 export default nextConfig;

@@ -12,6 +12,7 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import { useSectionInView } from "@/lib/hooks";
+import LinkPreviewWrapper from "@/components/LinkPreviewWrapper";
 
 const portfolioProjects = [
   {
@@ -51,7 +52,7 @@ const portfolioProjects = [
       },
       { title: "Designed in Figma and inspired by Dribbble." },
     ],
-    projectLink: "https://taste-trek.netlify.app/",
+    projectLink: "https://tastetrek.vercel.app/",
     githubLink: "https://github.com/taniya23y/TasteTrek-Food-Website",
     image: tasteTrekImg,
   },
@@ -67,7 +68,7 @@ const portfolioProjects = [
           "Offers users seamless access to a wide range of courses through an intuitive interface.",
       },
     ],
-    projectLink: "https://edumeet-project.netlify.app/",
+    projectLink: "https://edumeet-project.vercel.app/",
     githubLink: "https://github.com/taniya23y/edumeet",
     image: eduMeetImg,
   },
@@ -99,7 +100,7 @@ const portfolioProjects = [
       },
       { title: "Seamlessly save, share, edit and download your projects." },
     ],
-    projectLink: "https://Code-Compiler-Project.netlify.app/",
+    projectLink: "https://Code-Compiler-Project.vercel.app/",
     githubLink: "https://github.com/Taniya23Y/Code.Compiler.Project",
     image: codeCompilerImg,
   },
@@ -116,7 +117,7 @@ const portfolioProjects = [
       { title: "built using HTML, CSS, and Tailwind CSS." },
     ],
     projectLink: "https://Razorpay-clone-Project.netlify.app/",
-    projectUrl: "https://github.com/Taniya23Y/Razorpay.com-clone",
+    githubLink: "https://github.com/Taniya23Y/Razorpay.com-clone",
     image: RazorpayImg,
   },
 ];
@@ -166,19 +167,22 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col lg:flex-row lg:gap-3">
-                    <a href={project.projectLink}>
+                    <LinkPreviewWrapper url={project.projectLink} className="">
                       <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                         <span>Visit Live Site</span>
                         <ArrowUpRightIcon className="size-4" />
                       </button>
-                    </a>
+                    </LinkPreviewWrapper>
 
-                    <a href={project.githubLink}>
+                    <LinkPreviewWrapper
+                      url={project.githubLink ?? ""}
+                      className=""
+                    >
                       <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                         <span>View Repo</span>
                         <ArrowUpRightIcon className="size-4" />
                       </button>
-                    </a>
+                    </LinkPreviewWrapper>
                   </div>
                 </div>
                 <div className="relative">

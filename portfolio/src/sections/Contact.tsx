@@ -1,5 +1,6 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import LinkPreviewWrapper from "@/components/LinkPreviewWrapper";
 
 const footerLink = [
   {
@@ -47,16 +48,16 @@ export const ContactSection = () => {
               <div className="border-t border-white py-3 text-sm flex flex-col md:flex-row md:justify-between items-center gap-8">
                 <nav className="flex flex-col md:flex-row items-center gap-8">
                   {footerLink.map((link) => (
-                    <a
-                      href={link.href}
+                    <LinkPreviewWrapper
+                      url={link.href}
                       key={link.title}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      // target="_blank"
+                      // rel="noopener noreferrer"
                       className="inline-flex gap-1.5 cursor-pointer"
                     >
                       <span className="font-semibold z-10">{link.title}</span>
                       <ArrowUpRightIcon className="size-4" />
-                    </a>
+                    </LinkPreviewWrapper>
                   ))}
                 </nav>
               </div>
