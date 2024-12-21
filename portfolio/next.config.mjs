@@ -44,7 +44,8 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ["api.microlink.io"],
+    domains: ["api.microlink.io", "github.com", "api.microservice.url"],
+    // domains: ["api.microlink.io"],
   },
 };
 
