@@ -10,6 +10,7 @@ Welcome to my portfolio project! This project is built with TypeScript and Next.
 </div>
 
 ## Features ✨
+
 - **Responsive Design:** 📱 Optimized for all devices using Tailwind CSS.
 - **Smooth Animations:** 🎥 Implemented with Framer Motion for modern UI/UX.
 - **Interactive Hover Effects:** 🖱️ Powered by Radix UI's Hover Card component.
@@ -18,6 +19,7 @@ Welcome to my portfolio project! This project is built with TypeScript and Next.
 - **Optimized Performance:** ⚡ Uses Sharp for image optimization.
 
 ## Tech Stack 🛠️
+
 - **Framework:** [Next.js](https://nextjs.org/) (v14.2.5)
 - **Language:** TypeScript
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/) 🎨
@@ -31,21 +33,25 @@ Welcome to my portfolio project! This project is built with TypeScript and Next.
 Follow these steps to get started:
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Taniya23Y/NewOne
    ```
 
 2. Navigate to the project directory:
+
    ```bash
    cd NewOne
    ```
 
 3. Install dependencies:
+
    ```bash
    npm install
    ```
 
 4. Run the development server:
+
    ```bash
    npm run dev
    ```
@@ -53,6 +59,7 @@ Follow these steps to get started:
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the portfolio.
 
 ## Live URL 🌍
+
 Visit the live portfolio: [taniyay-portfolio.vercel.app](https://taniyay-portfolio.vercel.app)
 
 ## Scripts 📜
@@ -65,6 +72,7 @@ Visit the live portfolio: [taniyay-portfolio.vercel.app](https://taniyay-portfol
 ## Dependencies 📦
 
 ### Core
+
 - `@radix-ui/react-hover-card`: v1.1.4
 - `@svgr/webpack`: v8.1.0
 - `clsx`: v2.1.1
@@ -81,9 +89,11 @@ Visit the live portfolio: [taniyay-portfolio.vercel.app](https://taniyay-portfol
 - `tailwind-merge`: v2.4.0
 
 ### Dev Dependencies
+
 Make sure to include any necessary development dependencies in your local setup.
 
 ## Folder Structure 📂
+
 ```plaintext
 .
 ├── components   # Reusable UI components
