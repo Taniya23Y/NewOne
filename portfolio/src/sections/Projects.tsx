@@ -2,10 +2,12 @@
 
 import piyushFolio from "@/assets/images/PortFolio.png";
 import tasteTrekImg from "@/assets/images/TasteTrek.png";
-import eduMeetImg from "@/assets/images/Banner.png";
+import eduMeetImg from "@/assets/images/edumeetImg1.png";
 import DuoStudioImg from "@/assets/images/DuoStudio.png";
 import codeCompilerImg from "@/assets/images/CodeCompiler.png";
 import RazorpayImg from "@/assets/images/Razorpay.png";
+import MyPortfolioImg from "@/assets/images/MyPortfolioImg.png";
+import DineTasteImg from "@/assets/images/DineTaste.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -16,22 +18,42 @@ import LinkPreviewWrapper from "@/components/LinkPreviewWrapper";
 
 const portfolioProjects = [
   {
-    tags: ["Figma, ", "React, ", "Redux-toolkit, ", "Framer-Motion, ", "GSAP"],
-    year: "2024",
-    title: "Piyush Portfolio",
+    tags: ["Javascript, ", "React, ", "Redux-toolkit, ", "MongoDB"],
+    year: "2023",
+    title: "EduMeet",
     results: [
       {
         title:
-          "This portfolio 🎯 was designed and developed by me 🎨 for my classmate Piyush 👨‍💻.",
+          "📚 EduMeet is a learning platform offering a smooth experience for students and admins.",
       },
       {
         title:
-          "It showcases Piyush's projects and skills in an intuitive and visually appealing manner 🌟.",
+          "🎥 Users can explore, purchase, and watch video courses with ease.",
+      },
+      {
+        title:
+          "⭐ Learners can leave ratings and reviews after completing courses.",
       },
     ],
-    projectLink: "https://ui-portfolio-umber.vercel.app/",
-    githubLink: "https://github.com/taniya23y/Piyush-Folio",
-    image: piyushFolio,
+    projectLink: "https://edumeet-learn.vercel.app",
+    githubLink: "https://github.com/Taniya23Y/Next-Edumeet",
+    image: eduMeetImg,
+  },
+
+  {
+    tags: ["React, ", "TypeScript, ", "MongoDB, ", "Tailwind, ", "Shadcn"],
+    year: "2023",
+    title: "Code.Compiler",
+    results: [
+      {
+        title:
+          "Elevate your coding experience with CodeCompiler 💻, enabling real-time HTML, CSS, and JS coding, sharing.",
+      },
+      { title: "Seamlessly save, share, edit and download your projects." },
+    ],
+    projectLink: "https://Code-Compiler-Project.vercel.app",
+    githubLink: "https://github.com/Taniya23Y/Code.Compiler.Project",
+    image: codeCompilerImg,
   },
 
   {
@@ -58,19 +80,22 @@ const portfolioProjects = [
   },
 
   {
-    tags: ["Javascript, ", "React, ", "Redux-toolkit, ", "MongoDB"],
-    year: "2023",
-    title: "EduMeet Learning Hub",
+    tags: ["Figma, ", "React, ", "Redux-toolkit, ", "Framer-Motion, ", "GSAP"],
+    year: "2024",
+    title: "Piyush Portfolio",
     results: [
-      { title: "EduMeet 🎯 is innovative online learning platform." },
       {
         title:
-          "Offers users seamless access to a wide range of courses through an intuitive interface.",
+          "This portfolio 🎯 was designed and developed by me 🎨 for my classmate Piyush 👨‍💻.",
+      },
+      {
+        title:
+          "It showcases Piyush's projects and skills in an intuitive and visually appealing manner 🌟.",
       },
     ],
-    projectLink: "https://edumeet-project.vercel.app/",
-    githubLink: "https://github.com/taniya23y/edumeet",
-    image: eduMeetImg,
+    projectLink: "https://ui-portfolio-umber.vercel.app/",
+    githubLink: "https://github.com/taniya23y/Piyush-Folio",
+    image: piyushFolio,
   },
 
   {
@@ -84,25 +109,40 @@ const portfolioProjects = [
       },
       { title: "showcasing a deep passion for web design and development." },
     ],
-    projectLink: "https://Duo-Studio-Clone-project.netlify.app/",
+    projectLink: "https://duo-studio-webclone.netlify.app",
     githubLink: "https://github.com/Taniya23Y/Duo-Studio-Clone",
     image: DuoStudioImg,
   },
 
   {
-    tags: ["React, ", "TypeScript, ", "MongoDB, ", "Tailwind, ", "Shadcn"],
-    year: "2023",
-    title: "Code.Compiler",
+    tags: [
+      "TypeScript, ",
+      "Next.js, ",
+      "Tailwind CSS, ",
+      "Framer Motion, ",
+      "Radix UI, ",
+      "React Rating, ",
+      "React Icons",
+    ],
+    year: "2024",
+    title: "My-Portfolio",
     results: [
       {
         title:
-          "Elevate your coding experience with CodeCompiler 💻, enabling real-time HTML, CSS, and JS coding, sharing.",
+          "Built with TypeScript and Next.js to showcase projects and skills effectively.",
       },
-      { title: "Seamlessly save, share, edit and download your projects." },
+      {
+        title:
+          "Responsive Design 📱 using Tailwind CSS for optimized display on all devices.",
+      },
+      {
+        title:
+          "SEO Friendly 🔍 leveraging Next.js for better search engine visibility.",
+      },
     ],
-    projectLink: "https://Code-Compiler-Project.vercel.app/",
-    githubLink: "https://github.com/Taniya23Y/Code.Compiler.Project",
-    image: codeCompilerImg,
+    projectLink: "https://taniyay-portfolio.vercel.app",
+    githubLink: "https://github.com/Taniya23Y/NewOne",
+    image: MyPortfolioImg,
   },
 
   {
@@ -116,9 +156,32 @@ const portfolioProjects = [
       { title: "showcasing a deep passion for web design and development." },
       { title: "built using HTML, CSS, and Tailwind CSS." },
     ],
-    projectLink: "https://Razorpay-clone-Project.netlify.app/",
+    projectLink: "https://Razorpay-clone-Project.netlify.app",
     githubLink: "https://github.com/Taniya23Y/Razorpay.com-clone",
     image: RazorpayImg,
+  },
+
+  {
+    tags: ["React, ", "FireBase, ", "Stripe-payments, ", "Parcel, ", "Jest"],
+    year: "2023",
+    title: "DineTaste",
+    results: [
+      {
+        title:
+          "DineTaste lets users view restaurants and browse their live menu fetched from Swiggy’s API.",
+      },
+      {
+        title:
+          "🛒 Users can add or remove items from cart with working discount functionality.",
+      },
+      {
+        title:
+          "⚛️ Built with React, Parcel, Redux Toolkit, and Tailwind CSS with key learnings in hooks.",
+      },
+    ],
+    projectLink: "https://dine-taste.vercel.app/",
+    githubLink: "https://github.com/Taniya23Y/DineTaste",
+    image: DineTasteImg,
   },
 ];
 
@@ -126,7 +189,7 @@ export const ProjectsSection = () => {
   const { ref } = useSectionInView("Projects", 0.5);
 
   return (
-    <section className="pt-16 pb-16 lg:pb-24" ref={ref} id="projects">
+    <section className="pt-16 pb-20 lg:pb-28" ref={ref} id="projects">
       <div className="container">
         <SectionHeader
           eyebrow="Real-world Results"
