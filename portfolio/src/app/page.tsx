@@ -5,6 +5,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { AboutSection } from "@/sections/About";
 import CertificationsSection from "@/sections/Certifications";
 import { ContactSection } from "@/sections/Contact";
+import { Experience } from "@/sections/Experience";
 import { Footer } from "@/sections/Footer";
 
 import { Header } from "@/sections/Header";
@@ -24,11 +25,12 @@ export default function Home() {
       <ResumePreview />
       <AboutSection />
       <Skills />
+      <Experience />
       <ProjectsSection />
       <TapeSection />
       <SocialLinkSection />
       <TestimonialsSection />
-      {/* <CertificationsSection /> */}
+      <CertificationsSection />
       <ContactSection />
       <Footer />
       <GithubStarsButton />
