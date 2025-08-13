@@ -47,6 +47,10 @@ export const TestimonialsSection = () => {
     <div className="py-16 md:py-24">
       <div className="container">
         <SectionHeader
+          tagIcon="solar:users-group-rounded-outline"
+          tagText="Client Stories"
+          showUnderline={true}
+          centered={true}
           eyebrow="Happy Clients"
           title="What Clients Say about Me"
           description="Don't just take my word for it. See what my clients have to say

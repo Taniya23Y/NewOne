@@ -54,12 +54,16 @@ export const Skills = () => {
   }, []);
 
   return (
-    <div className="py-20 relative" id="skills">
+    <div className="py-20 relative" id="stack">
       <div className="container">
         <SectionHeader
+          tagIcon="solar:code-bold"
+          tagText="Tech Arsenal"
+          showUnderline={true}
+          centered={true}
           eyebrow="My Skills"
           title="Crafting Solutions that Shine"
-          description="I blend creativity and technical expertise to deliver exceptional results. Here's a snapshot of my key skills:"
+          description="I blend creativity and technical expertise to deliver exceptional results."
         />
 
         <div className="flex flex-col justify-center items-center pt-3">

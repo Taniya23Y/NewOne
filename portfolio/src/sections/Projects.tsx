@@ -189,9 +189,13 @@ export const ProjectsSection = () => {
   const { ref } = useSectionInView("Projects", 0.5);
 
   return (
-    <section className="pt-16 pb-20 lg:pb-28" ref={ref} id="projects">
+    <section className="pt-[5rem] pb-20 lg:pb-28" ref={ref} id="projects">
       <div className="container">
         <SectionHeader
+          tagIcon="solar:code-square-bold"
+          tagText="Portfolio Showcase"
+          showUnderline={true}
+          centered={true}
           eyebrow="Real-world Results"
           title="Featured Projects"
           description=" See how I transformed concepts into engaging digital experiences."

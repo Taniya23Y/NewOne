@@ -29,6 +29,7 @@ const config: Config = {
       fontFamily: {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)",
+        spaceGrotesk: ["var(--font-space-grotesk)", "sans-serif"],
       },
       animation: {
         "ping-large": "ping-large 1s ease-in-out infinite",

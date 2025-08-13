@@ -1,6 +1,12 @@
-# Portfolio 🌐
+# 🚀 Taniya Yadav - Portfolio
 
 Welcome to my portfolio project! This project is built with TypeScript and Next.js, using a range of libraries and tools to create a sleek, interactive, and responsive portfolio website.
+
+![Portfolio Preview](https://img.shields.io/badge/Portfolio-Live-brightgreen)
+![Next.js](https://img.shields.io/badge/Next.js-15.3-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.0-38B2AC)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-11.0-FF0055)
 
 <div align="center">
   <br />
@@ -18,6 +24,39 @@ Welcome to my portfolio project! This project is built with TypeScript and Next.
 - **SEO Friendly:** 🔍 Enhanced with Next.js capabilities.
 - **Optimized Performance:** ⚡ Uses Sharp for image optimization.
 
+### 🎨 **Stunning Visual Design**
+
+- **Dark & Light Theme**: Modern dark & light themes with beautiful gradients
+- **Animated Background**: Floating particles and gradient effects
+- **Glass Morphism**: Beautiful glass effects and backdrop blur
+- **Gradient Text**: Eye-catching gradient text effects
+- **Custom Scrollbar**: Styled scrollbar with gradient colors
+
+### 🎬 **Smooth Animations**
+
+- **Framer Motion**: Sophisticated animations powered by Framer Motion
+- **Scroll-triggered Animations**: Elements animate as they come into view
+- **Hover Effects**: Interactive hover animations throughout
+- **Loading Animations**: Beautiful loading and transition effects
+- **Typing Effects**: Dynamic typing animations
+
+### 📱 **Responsive Design**
+
+- **Mobile-First**: Fully responsive across all devices
+- **Touch-Friendly**: Optimized for touch interactions
+- **Fast Loading**: Optimized performance and fast loading times
+- **SEO Optimized**: Proper meta tags and structured data
+
+### 🧩 **Sections**
+
+1. **Hero Section**: Stunning animated introduction with floating particles
+2. **About Me**: Personal information with animated profile card
+3. **Projects**: Interactive project showcase with hover effects
+4. **Skills**: Animated skill bars with technology categories
+5. **Experience**: Professional timeline with achievements
+6. **Contact**: Call-to-action section with contact information
+7. **Certificate**: Showcase of earned certifications with interactive view/download options
+
 ## Tech Stack 🛠️
 
 - **Framework:** [Next.js](https://nextjs.org/) (v14.2.5)
@@ -28,7 +67,32 @@ Welcome to my portfolio project! This project is built with TypeScript and Next.
 - **Utility Classes Merging:** [Tailwind Merge](https://github.com/dcastil/tailwind-merge)
 - **Intersection Observers:** [React Intersection Observer](https://github.com/thebuilder/react-intersection-observer) 👀
 
-## Installation 🚀
+### **Styling & Animation**
+
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Advanced animations library
+- **CSS Custom Properties** - Dynamic theming
+- **Custom CSS Animations** - Hand-crafted effects
+
+### **Icons & Assets**
+
+- **Iconifyt** - Beautiful, customizable icons
+- **Google Fonts (Space Grotesk)** - Modern typography
+
+### **Development Tools**
+
+- **ESLint** - Code linting and formatting
+- **PostCSS** - CSS processing
+- **Autoprefixer** - CSS vendor prefixing
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.0 or later
+- npm or yarn package manager
+
+### Installation
 
 Follow these steps to get started:
 

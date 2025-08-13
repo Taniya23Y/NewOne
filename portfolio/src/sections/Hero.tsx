@@ -1,3 +1,5 @@
+"use client";
+
 import memojImage from "@/assets/images/hero-removebg-preview.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
@@ -6,10 +8,16 @@ import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import LinkPreviewWrapper from "@/components/LinkPreviewWrapper";
+import { motion } from "framer-motion";
+import { Icon } from "@iconify/react";
+import { link } from "fs";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-47 lg:py-51 relative z-0 overflow-x-clip">
+    <div
+      className="py-32 md:py-47 lg:py-51 relative z-0 overflow-x-clip"
+      id="home"
+    >
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -130,7 +138,12 @@ export const HeroSection = () => {
 
       <div className="container relative z-10">
         {/* image and green btn */}
-        <div className="flex flex-col items-center">
+        <motion.div
+          className="flex flex-col items-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+        >
           <Image
             src={memojImage}
             className="size-[100px] object-contain"
@@ -144,37 +157,91 @@ export const HeroSection = () => {
               Available for new projects
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* heading and para */}
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+          {/* Name */}
+          <motion.h1
+            className="text-5xl md:text-6xl font-bold mb-4 text-center tracking-wide"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+          >
+            <span className="text-center bg-[#D2ACF7] font-spaceGrotesk bg-clip-text text-transparent z-10">
+              Taniya Yadav
+            </span>
+          </motion.h1>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide"
+          >
             Building Exceptional User Experiences
-          </h1>
-          <p className="mt-4 text-center text-white/60 md:text-lg">
-            I specialize in transforming designs into functional,
-            high-performing web applications. Let&apos;s discuss your next
-            project.
-          </p>
+          </motion.h1>
+          {/* Tagline */}
+          <motion.p
+            className="mt-4 text-center text-lg md:text-xl text-[#CFE4FF] mb-10 max-w-2xl mx-auto leading-relaxed font-spaceGrotesk"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
+          >
+            Crafting exceptional digital experiences with clean code and
+            thoughtful design
+          </motion.p>
         </div>
 
-        {/* two btns */}
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <LinkPreviewWrapper
-            url="https://github.com/taniya23y"
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl text-white bg-transparent"
-          >
-            <span className="font-semibold">Explore My Work</span>
-            <ArrowDown className="size-4" />
-          </LinkPreviewWrapper>
-          <LinkPreviewWrapper
-            url="https://linkedin.com/in/taniyay"
-            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
-          >
-            <span>👋</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
-          </LinkPreviewWrapper>
-        </div>
+        {/* Social Links - keeping exactly the same */}
+        <motion.div
+          className="flex flex-wrap gap-3 justify-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.0 }}
+        >
+          {[
+            {
+              href: "https://github.com/taniya23y",
+              icon: "simple-icons:github",
+              label: "GitHub",
+              colorClass: "text-pink-500",
+              bg: "#EFCCCA",
+            },
+            {
+              href: "https://linkedin.com/in/taniyay",
+              icon: "skill-icons:linkedin",
+              label: "LinkedIn",
+              colorClass: "text-blue-600",
+              bg: "#CFE4FF",
+            },
+            {
+              href: "mailto:taniyayadav882@gmail.com",
+              icon: "material-icon-theme:email",
+              label: "Email",
+              colorClass: "text-yellow-900",
+              bg: "#E7D38A",
+            },
+          ].map((link) => (
+            <motion.div
+              key={link.label}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="rounded-full"
+              style={{
+                backgroundColor: link.bg,
+              }}
+            >
+              <LinkPreviewWrapper
+                url={link.href}
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-all duration-300 shadow-lg hover:shadow-xl ${link.colorClass}`}
+              >
+                <Icon icon={link.icon} width={18} height={18} />
+                {link.label}
+              </LinkPreviewWrapper>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </div>
   );
