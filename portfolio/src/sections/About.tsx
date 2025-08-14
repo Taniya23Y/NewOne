@@ -109,7 +109,7 @@ export const AboutSection = () => {
           />
 
           {/* Main Content Grid */}
-          <div className="mt-10 grid lg:grid-cols-12 gap-6 md:gap-8 items-start px-4">
+          <div className="mt-10 grid lg:grid-cols-12 gap-6 md:gap-8 items-start px-3">
             {/* Main Profile Section */}
             <motion.div variants={itemVariants} className="lg:col-span-8">
               <div className="space-y-6 md:space-y-8">
@@ -140,8 +140,7 @@ export const AboutSection = () => {
                         and
                         <span className="font-bold text-purple-600 dark:text-purple-400">
                           &nbsp; AI enthusiast
-                        </span>{" "}
-                        crafting digital experiences that users love.
+                        </span>
                       </p>
                     </div>
 
@@ -174,15 +173,16 @@ export const AboutSection = () => {
                       </h4>
                       <div className="flex flex-wrap gap-2 md:gap-3">
                         {[
-                          "AI Integration",
                           "React",
                           "Next.js",
                           "TypeScript",
                           "Node.js",
                           "Python",
+                          "AI Integration",
                           "AWS",
-                          "UI/UX Design",
-                          "Healthcare IT",
+                          "UI Design",
+                          "C++",
+                          "JavaScript",
                         ].map((skill, index) => (
                           <motion.span
                             key={skill}
@@ -241,7 +241,7 @@ export const AboutSection = () => {
               className="lg:col-span-4 space-y-8 mt-6 lg:mt-0"
             >
               {/* Contact Card */}
-              <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-50/90 to-pink-50/90 dark:from-purple-950/30 dark:to-pink-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
+              <div className="p-4 rounded-2xl bg-gradient-to-br from-purple-50/90 to-pink-50/90 dark:from-purple-950/30 dark:to-pink-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
                 <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                   <Icon
                     icon="solar:chat-round-dots-bold"
@@ -253,7 +253,7 @@ export const AboutSection = () => {
                 </h4>
                 <div className="space-y-3">
                   <motion.a
-                    href="mailto:mramazan1@yahoo.com"
+                    href="mailto:taniyayadav882@gmail.com"
                     whileHover={{ scale: 1.02, x: 4 }}
                     whileTap={{ scale: 0.98 }}
                     className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 hover:bg-white/90 dark:hover:bg-gray-800/50 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
@@ -273,7 +273,8 @@ export const AboutSection = () => {
                     </div>
                   </motion.a>
 
-                  <motion.div
+                  <motion.a
+                    href="https://taniyay-portfolio.vercel.app"
                     whileHover={{ scale: 1.02, x: 4 }}
                     className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
                   >
@@ -287,10 +288,10 @@ export const AboutSection = () => {
                     </div>
                     <div>
                       <div className="text-sm font-bold text-gray-900 dark:text-white">
-                        taniyay-portfolio.vercel
+                        taniyay-portfolio.vercel.app
                       </div>
                     </div>
-                  </motion.div>
+                  </motion.a>
 
                   <motion.div
                     whileHover={{ scale: 1.02, x: 4 }}

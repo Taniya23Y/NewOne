@@ -32,7 +32,7 @@ const experience = [
 export const Experience = () => {
   return (
     <div className="container" id="experience">
-      <div>
+      <div className="py-20 md:py-17">
         <SectionHeader
           tagIcon="mdi:briefcase-outline"
           tagText="Professional Journey"

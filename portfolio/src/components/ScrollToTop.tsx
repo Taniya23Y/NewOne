@@ -26,7 +26,7 @@ export function ScrollToTop() {
 
   return (
     isVisible && (
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className="fixed bottom-16 right-2 z-50">
         <button
           onClick={scrollToTop}
           className="relative p-3 bg-[#1d1d1d] text-white rounded-full shadow-md hover:bg-[#D2ACF7] hover:text-black transition group"
@@ -66,8 +66,8 @@ export function ScrollToTop() {
           <ArrowUp className="w-5 h-5 relative z-10" />
 
           {/* Tooltip */}
-          <span className="absolute right-full mr-2 px-2 py-1 text-sm text-black bg-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-            Scroll to top
+          <span className="absolute top-1/2 right-full -translate-y-1/2 ml-3 px-2 py-1 text-sm text-black bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">
+            Scroll to 👆 top!
           </span>
         </button>
       </div>

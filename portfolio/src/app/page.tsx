@@ -7,7 +7,7 @@ import CertificationsSection from "@/sections/Certifications";
 import { ContactSection } from "@/sections/Contact";
 import { Experience } from "@/sections/Experience";
 import { Footer } from "@/sections/Footer";
-
+import { EducationSection } from "@/sections/Education";
 import { Header } from "@/sections/Header";
 import { HeroSection } from "@/sections/Hero";
 import { ProjectsSection } from "@/sections/Projects";
@@ -24,6 +24,7 @@ export default function Home() {
       <HeroSection />
       <ResumePreview />
       <AboutSection />
+      <EducationSection />
       <Skills />
       <Experience />
       <ProjectsSection />

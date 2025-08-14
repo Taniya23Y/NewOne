@@ -13,6 +13,7 @@ export const Header = () => {
 
   const navItems = [
     { name: "Overview", icon: "mdi:home-outline" },
+    { name: "Education", icon: "mdi:school-outline" },
     { name: "Stack", icon: "mdi:layers-outline" },
     { name: "Experience", icon: "mdi:account-tie-outline" },
     { name: "Projects", icon: "mdi:folder-outline" },

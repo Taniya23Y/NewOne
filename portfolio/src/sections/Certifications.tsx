@@ -13,6 +13,7 @@ type Certificate = {
   platform: string;
   issued: string;
   credentialId: string;
+  credentialCertificate: string;
   skills: string[];
   platformIcon: string;
   color: string;
@@ -27,6 +28,8 @@ const certifications: Certificate[] = [
     platform: "NamasteDev",
     issued: "Sept 2024",
     credentialId: "Z4AMQZ3L2",
+    credentialCertificate:
+      "https://www.linkedin.com/in/taniyay/details/certifications/1748114812783/single-media-viewer/?profileId=ACoAAD6CowwBh31APSVV08td8DjfhMH7OxclV34",
     skills: ["Nodejs", "Express", "MongoDB", "AWS", "Open Source"],
     platformIcon: "logos:nodejs",
     color: "from-blue-500 to-blue-600",
@@ -39,6 +42,8 @@ const certifications: Certificate[] = [
     platform: "NamasteDev",
     issued: "January 2023",
     credentialId: "3UPD6SABRD3B",
+    credentialCertificate:
+      "https://www.linkedin.com/in/taniyay/details/certifications/1755089873306/single-media-viewer/?profileId=ACoAAD6CowwBh31APSVV08td8DjfhMH7OxclV34",
     skills: ["react", "routing", "react-hooks", "Frontend Development"],
     platformIcon: "logos:react",
     color: "from-blue-500 to-blue-600",
@@ -51,6 +56,8 @@ const certifications: Certificate[] = [
     platform: "Coursera",
     issued: "February 2023",
     credentialId: "5FNQEGLH78UD",
+    credentialCertificate:
+      "https://www.udemy.com/certificate/UC-c3752c48-4791-41dd-8669-f928a228c0c3/",
     skills: ["IBM Cloud", "HTML", "CSS", "Full-Stack Development"],
     platformIcon: "logos:java",
     color: "from-blue-500 to-purple-600",
@@ -64,6 +71,8 @@ const certifications: Certificate[] = [
     platform: "NamasteDev",
     issued: "April 2023",
     credentialId: "OZ4QYZ",
+    credentialCertificate:
+      "https://www.linkedin.com/in/taniyay/details/certifications/1712564951045/single-media-viewer/?profileId=ACoAAD6CowwBh31APSVV08td8DjfhMH7OxclV34",
     skills: [
       "Frontend Development",
       "DOM Manipulation",
@@ -82,6 +91,8 @@ const certifications: Certificate[] = [
     platform: "Codehelp",
     issued: "January 2023",
     credentialId: "2AUUVS958L5Y",
+    credentialCertificate:
+      "https://www.linkedin.com/in/taniyay/details/certifications/1709805526367/single-media-viewer/?profileId=ACoAAD6CowwBh31APSVV08td8DjfhMH7OxclV34",
     skills: ["C++", "Programming", "Data Structures", "Algorithms"],
     platformIcon: "logos:c",
     color: "from-blue-500 to-purple-600",
@@ -95,6 +106,7 @@ const certifications: Certificate[] = [
     platform: "Coursera",
     issued: "July 2025",
     credentialId: "BLGJKHN6UTSF",
+    credentialCertificate: "",
     skills: ["Generative", "AI tools", "AI", "LLM Development"],
     platformIcon: "logos:python",
     color: "from-blue-500 to-purple-600",
@@ -299,9 +311,8 @@ export default function CertificationsSection() {
                     {/* Credential ID */}
                     <div className="flex items-center justify-between pt-4 border-t border-gray-200/60 dark:border-gray-700/50">
                       <Link
-                        href={`https://www.coursera.org/verify/${cert.credentialId}`}
+                        href={`${cert.credentialCertificate}`}
                         target="_blank"
-                        // rel="noopener noreferrer"
                       >
                         <div className="flex items-center gap-2">
                           <Icon
@@ -348,7 +359,7 @@ export default function CertificationsSection() {
           >
             <motion.div
               whileHover={{ scale: 1.02, y: -2 }}
-              className="inline-flex items-center gap-6 px-8 py-4 bg-[#1d1d1d]  backdrop-blur-sm border border-blue-200/50  hover:border-blue-300/70 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500"
+              className="inline-flex items-center gap-6 px-6 py-4 bg-[#1d1d1d]  backdrop-blur-sm border border-blue-200/50  hover:border-blue-300/70 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500"
             >
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl shadow-md">
@@ -372,7 +383,7 @@ export default function CertificationsSection() {
                   height={22}
                 />
                 <span className="text-gray-600 dark:text-gray-400 text-sm md:text-base font-medium">
-                  Verified by Industry Leaders
+                  Verified by Tech Leaders
                 </span>
               </div>
             </motion.div>

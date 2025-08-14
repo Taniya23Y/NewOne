@@ -94,7 +94,7 @@ export const ContactSection = () => {
           <div className="container mx-auto px-4 bg-[#152D24] rounded-2xl border border-[#33785f]">
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
               {/* Left Column: Why Work With Me */}
-              <div className="bg-[#152D24] p-8 rounded-lg shadow-lg">
+              <div className="p-7 md:p-8 rounded-lg">
                 <div>
                   <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
                     <div className="p-1.5 md:p-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg md:rounded-xl">
@@ -164,7 +164,7 @@ export const ContactSection = () => {
               </div>
 
               {/* Right Column: Contact Form */}
-              <div className="p-8 rounded-lg shadow-lg">
+              <div className="p-6 md:p-8 rounded-lg ">
                 <motion.section
                   id="contact"
                   initial={{ opacity: 0, y: 30 }}
