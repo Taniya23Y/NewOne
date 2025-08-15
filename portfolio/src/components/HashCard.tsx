@@ -17,18 +17,18 @@ export function HashCard({ title, brief, slug, publishedAt }: BlogCardProps) {
         {/* Content Section */}
         <div className="p-5 flex flex-col justify-between lg:w-full">
           <div>
-            <h3 className="text-lg lg:text-xl font-semibold text-white dark:text-white leading-snug line-clamp-2 group-hover:text-blue-400 transition-colors">
+            <h3 className="text-lg lg:text-xl font-semibold text-white leading-snug line-clamp-2 group-hover:text-blue-400 transition-colors">
               {title}
             </h3>
-            <p className="mt-2 text-sm lg:text-base text-gray-300 dark:text-gray-300 leading-relaxed line-clamp-4">
+            <p className="mt-2 text-sm lg:text-base text-gray-300 leading-relaxed line-clamp-4">
               {brief}
             </p>
           </div>
           <div className="flex items-center justify-between mt-4">
-            <span className="text-sm lg:text-base text-gray-400 dark:text-gray-400">
+            <span className="text-sm lg:text-base text-gray-400">
               Published: {new Date(publishedAt).toLocaleDateString()}
             </span>
-            <span className="text-sm lg:text-base font-medium text-blue-500 dark:text-blue-400 hover:underline">
+            <span className="text-sm lg:text-base font-medium text-blue-400 hover:underline">
               Read More →
             </span>
           </div>

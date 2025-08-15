@@ -125,34 +125,34 @@ export const AboutSection = () => {
 
                   <div className="space-y-4 md:space-y-6">
                     <div>
-                      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-gray-900 dark:text-white flex items-center gap-2 md:gap-3">
+                      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-white flex items-center gap-2 md:gap-3">
                         <span className="text-2xl sm:text-3xl md:text-4xl">
                           👋
                         </span>
                         Hello, I&apos;m Taniya Yadav
                       </h3>
 
-                      <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4 md:mb-6">
+                      <p className="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed mb-4 md:mb-6">
                         A passionate{" "}
-                        <span className="font-bold text-blue-600 dark:text-blue-400">
+                        <span className="font-bold text-blue-400">
                           Full Stack Developer
                         </span>{" "}
                         and
-                        <span className="font-bold text-purple-600 dark:text-purple-400">
+                        <span className="font-bold text-purple-400">
                           &nbsp; AI enthusiast
                         </span>
                       </p>
                     </div>
 
                     {/* Expanded About Content */}
-                    <div className="space-y-3 md:space-y-4 border-t border-gray-200/50 dark:border-gray-700/50 pt-4 md:pt-6">
-                      <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <div className="space-y-3 md:space-y-4 border-t border-gray-700/50 pt-4 md:pt-6">
+                      <p className="text-sm md:text-base text-gray-300 leading-relaxed">
                         I specialize in building scalable web and mobile
                         applications using React, Next.js, TypeScript, and
                         modern development technologies. I thrive on turning
                         complex problems into elegant solutions that users love.
                       </p>
-                      <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                      <p className="text-sm md:text-base text-gray-300 leading-relaxed">
                         Beyond work, I love exploring emerging technologies,
                         contributing to open-source projects, and mentoring
                         aspiring developers. I believe in continuous learning &
@@ -161,8 +161,8 @@ export const AboutSection = () => {
                     </div>
 
                     {/* Skills Highlight */}
-                    <div className="border-t border-gray-200/50 dark:border-gray-700/50 pt-4 md:pt-6">
-                      <h4 className="font-bold text-gray-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2">
+                    <div className="border-t border-gray-700/50 pt-4 md:pt-6">
+                      <h4 className="font-bold text-white mb-3 md:mb-4 flex items-center gap-2">
                         <Icon
                           icon="solar:lightning-bold"
                           className="text-yellow-500 w-4 md:w-5 h-4 md:h-5"
@@ -241,8 +241,8 @@ export const AboutSection = () => {
               className="lg:col-span-4 space-y-8 mt-6 lg:mt-0"
             >
               {/* Contact Card */}
-              <div className="p-4 rounded-2xl bg-gradient-to-br from-purple-50/90 to-pink-50/90 dark:from-purple-950/30 dark:to-pink-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+              <div className="p-4 rounded-2xl bg-gradient-to-br from-purple-950/30 to-pink-950/30 backdrop-blur-sm border border-gray-700/40 shadow-xl">
+                <h4 className="font-bold text-white mb-6 flex items-center gap-2">
                   <Icon
                     icon="solar:chat-round-dots-bold"
                     className="text-purple-500 w-5 h-5"
@@ -256,7 +256,7 @@ export const AboutSection = () => {
                     href="mailto:taniyayadav882@gmail.com"
                     whileHover={{ scale: 1.02, x: 4 }}
                     whileTap={{ scale: 0.98 }}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 hover:bg-white/90 dark:hover:bg-gray-800/50 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
+                    className="flex items-center gap-3 p-3 rounded-lg bg-gray-800/30 hover:bg-gray-800/50 transition-all duration-300 group border border-gray-700/30"
                   >
                     <div className="p-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-md group-hover:from-orange-600 group-hover:to-red-600 transition-all shadow-md">
                       <Icon
@@ -267,7 +267,7 @@ export const AboutSection = () => {
                       />
                     </div>
                     <div>
-                      <div className="text-sm font-bold text-gray-900 dark:text-white break-all">
+                      <div className="text-sm font-bold text-white break-all">
                         taniyayadav882@gmail.com
                       </div>
                     </div>
@@ -276,7 +276,7 @@ export const AboutSection = () => {
                   <motion.a
                     href="https://taniyay-portfolio.vercel.app"
                     whileHover={{ scale: 1.02, x: 4 }}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
+                    className="flex items-center gap-3 p-3 rounded-lg bg-gray-800/30 border border-gray-700/30"
                   >
                     <div className="p-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md shadow-md">
                       <Icon
@@ -287,7 +287,7 @@ export const AboutSection = () => {
                       />
                     </div>
                     <div>
-                      <div className="text-sm font-bold text-gray-900 dark:text-white">
+                      <div className="text-sm font-bold text-white">
                         taniyay-portfolio.vercel.app
                       </div>
                     </div>
@@ -295,9 +295,9 @@ export const AboutSection = () => {
 
                   <motion.div
                     whileHover={{ scale: 1.02, x: 4 }}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30"
+                    className="flex items-center gap-3 p-3 rounded-lg bg-gray-800/30"
                   >
-                    <div className="p-1 bg-gradient-to-r from-red-500 to-pink-500 rounded-md shadow-md border border-white/20 dark:border-gray-700/30">
+                    <div className="p-1 bg-gradient-to-r from-red-500 to-pink-500 rounded-md shadow-md border border-gray-700/30">
                       <Icon
                         icon="solar:map-point-bold"
                         className="text-white w-4 h-4"
@@ -306,7 +306,7 @@ export const AboutSection = () => {
                       />
                     </div>
                     <div>
-                      <div className="text-sm font-bold text-gray-900 dark:text-white">
+                      <div className="text-sm font-bold text-white">
                         Indore, India
                       </div>
                     </div>
@@ -315,8 +315,8 @@ export const AboutSection = () => {
               </div>
 
               {/* Available for Hire */}
-              <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-950/30 to-cyan-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-950/30 to-cyan-950/30 backdrop-blur-sm border border-gray-700/40 shadow-xl">
+                <h4 className="font-bold text-white mb-6 flex items-center gap-2">
                   <Icon
                     icon="solar:rocket-bold"
                     className="text-emerald-600 w-5 h-5"
@@ -330,7 +330,7 @@ export const AboutSection = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 2.0 }}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
+                    className="flex items-center gap-3 p-3 rounded-lg bg-gray-800/30  transition-all duration-300 group border border-gray-700/30"
                   >
                     <Icon
                       icon="solar:check-circle-bold"
@@ -338,7 +338,7 @@ export const AboutSection = () => {
                       width={20}
                       height={20}
                     />
-                    <span className="text-sm font-medium text-gray-800 dark:text-gray-300">
+                    <span className="text-sm font-medium text-gray-300">
                       Open to New Opportunities
                     </span>
                   </motion.div>
@@ -346,7 +346,7 @@ export const AboutSection = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 2.2 }}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
+                    className="flex items-center gap-3 p-3 rounded-lg bg-gray-800/30  transition-all duration-300 group border border-gray-700/30"
                   >
                     <Icon
                       icon="solar:planet-2-bold"
@@ -354,7 +354,7 @@ export const AboutSection = () => {
                       width={20}
                       height={20}
                     />
-                    <span className="text-sm font-medium text-gray-800 dark:text-gray-300">
+                    <span className="text-sm font-medium text-gray-300">
                       Open to Relocation
                     </span>
                   </motion.div>
@@ -362,7 +362,7 @@ export const AboutSection = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 2.4 }}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
+                    className="flex items-center gap-3 p-3 rounded-lg bg-gray-800/30  transition-all duration-300 group border border-gray-700/30"
                   >
                     <Icon
                       icon="solar:clock-circle-bold"
@@ -370,7 +370,7 @@ export const AboutSection = () => {
                       width={20}
                       height={20}
                     />
-                    <span className="text-sm font-medium text-gray-800 dark:text-gray-300">
+                    <span className="text-sm font-medium text-gray-300">
                       Remote & On-site Available
                     </span>
                   </motion.div>

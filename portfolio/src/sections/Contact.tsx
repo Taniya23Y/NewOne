@@ -96,7 +96,7 @@ export const ContactSection = () => {
               {/* Left Column: Why Work With Me */}
               <div className="p-7 md:p-8 rounded-lg">
                 <div>
-                  <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
+                  <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
                     <div className="p-1.5 md:p-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg md:rounded-xl">
                       <Icon
                         icon="solar:settings-bold"
@@ -112,7 +112,7 @@ export const ContactSection = () => {
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ delay: featureIndex * 0.1 }}
-                        className="flex items-start gap-2.5 md:gap-3 text-gray-700 dark:text-gray-300"
+                        className="flex items-start gap-2.5 md:gap-3 text-gray-300"
                       >
                         <Icon
                           icon="solar:check-circle-bold"
@@ -412,7 +412,7 @@ export const ContactSection = () => {
                           whileTap={{ scale: 0.95 }}
                         >
                           <Link
-                            href="/CV.pdf"
+                            href="/certificates/CV.pdf"
                             className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 border-2  border-gray-600 hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
                           >
                             <Icon

@@ -207,9 +207,7 @@ export function SocialLinkSection() {
               </div>
             </div>
             {loading ? (
-              <p className="text-center text-gray-500 dark:text-gray-400">
-                Loading blogs...
-              </p>
+              <p className="text-center text-gray-400">Loading blogs...</p>
             ) : (
               <>
                 <div className="max-w-6xl mx-auto flex flex-col gap-6">

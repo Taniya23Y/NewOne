@@ -3,33 +3,6 @@ import React from "react";
 import { Icon } from "@iconify/react";
 
 const experience = [
-  // {
-  //   role: "Software Developer",
-  //   company: "Upwork",
-  //   period: "January 2025 — Present",
-  //   type: "Freelance",
-  //   companyIcon: "fa6-brands:square-upwork",
-  //   companyColor: "from-green-500 to-green-600",
-  //   borderLeftColor: "#1BB152",
-  //   description:
-  //     "Delivered high-quality projects across diverse domains, including website applications, API development, and cloud integrations (AWS).",
-  //   achievements: [
-  //     "Achieved Top-Rated status with a 91% job success score",
-  //     "Completed 10+ projects focusing on scalable solutions",
-  //     "Consistently praised for skillfulness, quick learning, and strong communication",
-  //     "Earned repeated engagements through reliability and expertise",
-  //   ],
-  //   technologies: [
-  //     "JavaScript",
-  //     "MongoDB",
-  //     "Node.js",
-  //     "AWS",
-  //     "Express",
-  //     "API Integration",
-  //     "Backend",
-  //   ],
-  //   workImage: "/certificates/supreme-dsa.jpeg",
-  // },
   {
     role: "Mern Stack Developer",
     company: "TechCodes",
@@ -39,7 +12,7 @@ const experience = [
     companyColor: "from-yellow-500 to-yellow-600",
     borderLeftColor: "#DFA406",
     description:
-      "Delivered high-quality projects across diverse domains, including website applications, API development, and cloud integrations (AWS).",
+      "TechCodes is a remote-first software development company where I worked as a MERN Stack Developer, contributing to the design, development, user-focused web applications.",
     achievements: [
       "My first taste of professional development! Got to work with the MERN stack and build stuff that users would interact with.",
       "The highlight? Building a real-time dashboard that boosted user engagement by 40% (yeah, I was pretty proud of that).",
@@ -65,9 +38,9 @@ const experience = [
     companyColor: "from-sky-500 to-sky-600",
     borderLeftColor: "#0998DC",
     description:
-      "Delivered high-quality projects across diverse domains, including website applications, API development, and cloud integrations (AWS).",
+      "Served as Lead Web Developer at SV Tech Club, overseeing web projects, mentoring juniors, and supporting major technical events and workshops.",
     achievements: [
-      "Leading our college's coding community and managed the annual tech fest - coordinating events, competitions, and workshops for 500+ students!",
+      "Leading our college's coding community and managed the annual tech fest - coordinating events, competitions, and workshops for 250+ students!",
       "Been guiding junior developers through their coding journey, teaching them DSA concepts and helping them build their first projects (pretty rewarding stuff).",
       "Plus, organizing coding bootCamps and hackathons while mentoring students has been honestly one of the best parts - seeing growth never gets old.",
     ],
@@ -102,7 +75,7 @@ export const Experience = () => {
             <div key={idx} className="mb-12 ml-6 relative">
               {/* Timeline Icon */}
               <span
-                className={`absolute -left-[3.5rem] top-5  flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r ${exp.companyColor} text-white shadow-lg`}
+                className={`absolute -left-[3.2rem] md:-left-[3.5rem] top-5  flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r ${exp.companyColor} text-white shadow-lg`}
               >
                 <Icon icon={exp.companyIcon} className="text-3xl" />
               </span>
