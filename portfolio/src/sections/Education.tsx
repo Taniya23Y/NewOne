@@ -17,7 +17,7 @@ const education = [
       "Maintained CGPA of 8.17",
       "Lead Web Developer at SV Tech Club",
       "Built 4+ full-stack projects during coursework",
-      "Represented college in hackathons and tech events",
+      "Represented college in workshops and tech events",
     ],
     technologies: [
       "JavaScript",
@@ -39,7 +39,10 @@ const education = [
     institutionColor: "from-yellow-500 to-yellow-700",
     description:
       "Studied Physics, Chemistry, Mathematics, and Computer Science with a focus on programming fundamentals.",
-    achievements: ["Scored 85%", "School-level coding competition winner"],
+    achievements: [
+      "Scored 70%",
+      "Recognized as a Consolation Winner in the School-level Marathon, Physical Education Event",
+    ],
     technologies: ["Maths", "PE", "Moral-Edu."],
     bgColor: "#565543",
     borderColor: "#FB9014",

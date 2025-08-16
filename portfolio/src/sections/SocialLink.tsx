@@ -6,6 +6,9 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { SiBlogger, SiGithub, SiLeetcode } from "react-icons/si";
 import { useHashCode } from "@/hooks/useHashCode";
 import { HashCard } from "../components/HashCard";
+import Link from "next/link";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import { SOCIAL_LINKS, USER_NAMES } from "@/lib/data";
 
 interface Repo {
   name: string;
@@ -26,7 +29,60 @@ interface UserProfile {
   html_url: string;
 }
 
+interface LeetCodeStats {
+  totalSolved: number;
+  totalQuestions: number;
+  easySolved: number;
+  totalEasy: number;
+  mediumSolved: number;
+  totalMedium: number;
+  hardSolved: number;
+  totalHard: number;
+  ranking: number;
+  recentSubmissions?: {
+    title: string;
+    statusDisplay: string;
+    timestamp: string | number;
+  }[];
+}
+
+const fetchLeetCodeStats = async (
+  username: string
+): Promise<LeetCodeStats | null> => {
+  try {
+    const response = await fetch(`https://leetscan.vercel.app/${username}`);
+    return await response.json();
+  } catch {
+    throw new Error("Failed to load LeetCode stats");
+  }
+};
+
+const formatDate = (timestamp: string | number): string => {
+  const date = new Date(Number(timestamp) * 1000);
+  return `${date.getDate().toString().padStart(2, "0")}.${(date.getMonth() + 1)
+    .toString()
+    .padStart(2, "0")}.${date.getFullYear().toString().slice(-2)}`;
+};
+
+const StatCard = ({
+  label,
+  value,
+  color = "text-foreground",
+}: {
+  label: string;
+  value: string;
+  color?: string;
+}) => (
+  <div className="box bg-background border border-border flex flex-col items-center justify-center p-2">
+    <span className={`font-bold text-sm ${color}`}>{label}</span>
+    <span className="text-sm text-foreground font-mono font-bold">{value}</span>
+  </div>
+);
+
 export function SocialLinkSection() {
+  const [stats, setStats] = useState<LeetCodeStats | null>(null);
+  const [loadings, setLoadings] = useState(true);
+  const [error, setError] = useState("");
   const [repos, setRepos] = useState<Repo[]>([]);
   const [user, setUser] = useState<UserProfile | null>(null);
   const { blogs, loading } = useHashCode();
@@ -53,6 +109,38 @@ export function SocialLinkSection() {
         )
       );
   }, []);
+
+  useEffect(() => {
+    fetchLeetCodeStats(USER_NAMES.leetcodeUsername)
+      .then(setStats)
+      .catch((err) => setError(err.message))
+      .finally(() => setLoadings(false));
+  }, []);
+
+  if (
+    !USER_NAMES.leetcodeUsername ||
+    USER_NAMES.leetcodeUsername.trim() === ""
+  ) {
+    return null;
+  }
+
+  // Loading and error states
+  if (loadings) {
+    return (
+      <div className="text-center py-8 text-lg text-gray-500 animate-pulse">
+        Loading LeetCode stats...
+      </div>
+    );
+  }
+
+  if (error || !stats) {
+    return (
+      <div className="text-red-500 text-center py-8">
+        {error || "No data found."}
+      </div>
+    );
+  }
+
   return (
     <div className="container flex flex-col pt-[5rem]" id="social-links">
       <SectionHeader
@@ -64,8 +152,9 @@ export function SocialLinkSection() {
         title="My Social links"
         description="Find me on coding platforms, explore my projects, and read my blogs."
       />
-      {/* Github  */}
+
       <SectionBackground>
+        {/* github */}
         <section id="github">
           <div className="mx-auto max-w-6xl px-8">
             <div className="mb-3 flex gap-4">
@@ -148,49 +237,104 @@ export function SocialLinkSection() {
         </div>
 
         {/* Leetcode  */}
-        <section id="leetcode">
-          <div className="container mx-auto max-w-6xl px-8">
-            <div className="mb-3 flex gap-4">
-              <div className="mt-6 flex gap-2 justify-center">
-                <SiLeetcode className="text-yellow-500 w-5 h-5" />
-                <h2>Leetcode.</h2>
-              </div>
+        <div className="container">
+          <section className="py-5" id="leetcode">
+            <h2 className="text-xl font-semibold mb-4">leetcode.</h2>
+
+            {/* LeetCode Profile Link */}
+            <div className="mb-4 flex items-center gap-2">
+              <Link
+                href={SOCIAL_LINKS.leetcode}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-link text-sm font-mono font-medium text-muted-foreground transition-colors flex items-center gap-1"
+              >
+                <SiLeetcode
+                  className="inline-block align-middle mr-1 text-yellow-500"
+                  size={16}
+                />
+                {USER_NAMES.leetcodeUsername}
+                <MdOutlineArrowOutward className="inline-block w-4 h-4 ml-1" />
+              </Link>
             </div>
 
-            {/* LEFT SIDE ONLY IN A ROW */}
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-              {/* Solved */}
-              <div className="col-span-1 bg-gradient-to-br from-yellow-900/20 to-yellow-950/30 border border-yellow-500/30 rounded-xl p-6 text-center text-white shadow-lg">
-                <h3 className="text-lg font-semibold">Solved</h3>
-                <p className="text-2xl font-bold">245</p>
+            {/* LeetCode Stats */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 max-w-5xl w-full">
+              {/* Stats Overview */}
+              <div className="lg:col-span-3 w-full flex flex-col gap-4 pl-0 lg:pl-2">
+                <div className="grid grid-cols-2 gap-3 w-full ">
+                  <div className="bg-gradient-to-br from-yellow-900/20 to-yellow-950/30 border border-yellow-500/30">
+                    <StatCard
+                      label="Solved"
+                      value={`${stats.totalSolved} / ${stats.totalQuestions}`}
+                    />
+                  </div>
+                  <div className="bg-gradient-to-br from-green-900/20 to-green-950/30 border border-green-500/30">
+                    <StatCard label="Rank" value={`# ${stats.ranking}`} />
+                  </div>
+                </div>
+                <div className="grid grid-cols-3 gap-3 w-full">
+                  <div className="bg-gradient-to-br from-green-900/20 to-green-950/30 border border-green-500/30">
+                    <StatCard
+                      label="Easy"
+                      value={`${stats.easySolved} / ${stats.totalEasy}`}
+                      color="text-green-600"
+                    />
+                  </div>
+
+                  <div className="bg-gradient-to-br from-red-900/20 to-red-950/30 border border-red-500/30">
+                    <StatCard
+                      label="Medium"
+                      value={`${stats.mediumSolved} / ${stats.totalMedium}`}
+                      color="text-yellow-500"
+                    />
+                  </div>
+                  <div className="bg-gradient-to-br from-yellow-900/20 to-yellow-950/30 border border-yellow-500/30">
+                    <StatCard
+                      label="Hard"
+                      value={`${stats.hardSolved} / ${stats.totalHard}`}
+                      color="text-red-500"
+                    />
+                  </div>
+                </div>
               </div>
 
-              {/* Rank */}
-              <div className="col-span-1 bg-gradient-to-br from-green-900/20 to-green-950/30 border border-green-500/30 rounded-xl p-6 text-center text-white shadow-lg">
-                <h3 className="text-lg font-semibold">Rank</h3>
-                <p className="text-2xl font-bold">4,99,102</p>
-              </div>
-
-              {/* Easy */}
-              <div className="col-span-1 bg-gradient-to-br from-green-900/20 to-green-950/30 border border-green-500/30 rounded-xl p-4 text-center text-white shadow-lg">
-                <h4 className="text-lg font-semibold">Easy</h4>
-                <p className="text-2xl font-bold">111 / 890</p>
-              </div>
-
-              {/* Medium */}
-              <div className="col-span-1 bg-gradient-to-br from-yellow-900/20 to-yellow-950/30 border border-yellow-500/30 rounded-xl p-4 text-center text-white shadow-lg">
-                <h4 className="text-lg font-semibold">Medium</h4>
-                <p className="text-2xl font-bold">113 / 1897</p>
-              </div>
-
-              {/* Hard */}
-              <div className="col-span-1 bg-gradient-to-br from-red-900/20 to-red-950/30 border border-red-500/30 rounded-xl p-4 text-center text-white shadow-lg">
-                <h4 className="text-lg font-semibold">Hard</h4>
-                <p className="text-2xl font-bold">21 / 860</p>
+              {/* Recent Submissions */}
+              <div className="lg:col-span-2 w-full flex flex-col h-full pr-0 lg:pr-2">
+                <div className="bg-gradient-to-br from-green-900/20 to-green-950/30 border border-green-500/30 box bg-background  border-border rounded-lg px-4 py-2 flex flex-col h-full justify-start">
+                  <span className="text-foreground font-semibold text-sm mb-2 block">
+                    Recent Submissions
+                  </span>
+                  <div className="flex flex-col gap-2">
+                    {stats.recentSubmissions &&
+                    stats.recentSubmissions.length > 0 ? (
+                      stats.recentSubmissions.slice(0, 4).map((sub, idx) => (
+                        <div
+                          key={idx}
+                          className="flex flex-row items-center justify-between w-full gap-2 min-w-0"
+                        >
+                          <span className="font-mono text-xs text-foreground truncate whitespace-nowrap flex-1">
+                            {sub.title}
+                          </span>
+                          <span className="text-xs text-muted-foreground flex-shrink-0">
+                            {sub.statusDisplay}
+                          </span>
+                          <span className="text-xs text-muted-foreground flex-shrink-0">
+                            {formatDate(sub.timestamp)}
+                          </span>
+                        </div>
+                      ))
+                    ) : (
+                      <span className="text-xs text-muted-foreground">
+                        No recent submissions
+                      </span>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         {/* dash line  */}
         <div className="mt-6 mb-6">

@@ -7,7 +7,6 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 import emailjs from "@emailjs/browser";
-import Link from "next/link";
 
 const projects = [
   {
@@ -394,9 +393,9 @@ export const ContactSection = () => {
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
-                          <Link
+                          <a
                             href="mailto:taniyayadav882@gmail.com"
-                            className="inline-flex items-center gap-2 px-6 py-3  bg-gray-800 hover:bg-gray-700 border-2 border-gray-600 hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 border-2 border-gray-600 hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
                           >
                             <Icon
                               icon="solar:mailbox-bold-duotone"
@@ -404,16 +403,17 @@ export const ContactSection = () => {
                               height={18}
                             />
                             Send Email
-                          </Link>
+                          </a>
                         </motion.div>
 
                         <motion.div
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
-                          <Link
+                          <a
                             href="/certificates/CV.pdf"
-                            className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 border-2  border-gray-600 hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
+                            download
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 border-2 border-gray-600 hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
                           >
                             <Icon
                               icon="solar:download-outline"
@@ -421,7 +421,7 @@ export const ContactSection = () => {
                               height={18}
                             />
                             Download CV
-                          </Link>
+                          </a>
                         </motion.div>
                       </div>
                     </motion.div>
