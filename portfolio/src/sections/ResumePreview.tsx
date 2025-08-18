@@ -169,16 +169,12 @@ export function ResumePreview() {
                   </h4>
                   <div className="space-y-2 text-sm text-muted-foreground/90">
                     <div className="flex items-center gap-2">
-                      <Award className="h-4 w-4 text-yellow-500" />
-                      <span>Innoviz 2023 - First Prize Winner</span>
-                    </div>
-                    <div className="flex items-center gap-2">
                       <User className="h-4 w-4 text-green-500" />
                       <span>Led 4-member team for Tech Exhibition</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Code className="h-4 w-4 text-blue-500" />
-                      <span>300+ DSA problems solved</span>
+                      <span>250+ DSA problems solved</span>
                     </div>
                   </div>
                 </div>

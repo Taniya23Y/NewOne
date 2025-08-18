@@ -8,6 +8,7 @@ import codeCompilerImg from "@/assets/images/CodeCompiler.png";
 import RazorpayImg from "@/assets/images/Razorpay.png";
 import MyPortfolioImg from "@/assets/images/MyPortfolioImg.png";
 import DineTasteImg from "@/assets/images/DineTaste.png";
+import NetflixGPTImg from "@/assets/images/netflixGpt.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -19,7 +20,7 @@ import LinkPreviewWrapper from "@/components/LinkPreviewWrapper";
 const portfolioProjects = [
   {
     tags: ["Javascript, ", "React, ", "Redux-toolkit, ", "MongoDB"],
-    year: "2023",
+    year: "2025",
     title: "EduMeet",
     results: [
       {
@@ -42,7 +43,7 @@ const portfolioProjects = [
 
   {
     tags: ["React, ", "TypeScript, ", "MongoDB, ", "Tailwind, ", "Shadcn"],
-    year: "2023",
+    year: "2024",
     title: "Code.Compiler",
     results: [
       {
@@ -54,6 +55,29 @@ const portfolioProjects = [
     projectLink: "https://Code-Compiler-Project.vercel.app",
     githubLink: "https://github.com/Taniya23Y/Code.Compiler.Project",
     image: codeCompilerImg,
+  },
+
+  {
+    tags: ["React, ", "GPT, ", "TMDB, ", "Parcel, ", "Javascript"],
+    year: "2023",
+    title: "NetflixGPT",
+    results: [
+      {
+        title:
+          "🔐 Authentication with Firebase (Sign Up & Sign In), Browse Movies & TV Shows powered by TMDB API.",
+      },
+      {
+        title:
+          "🧠 GPT-Powered Movie Recommendations for personalized suggestions.",
+      },
+      {
+        title:
+          "🔥 Protected Routes ensuring secure access for authenticated users.",
+      },
+    ],
+    projectLink: "https://flixgenie.vercel.app/",
+    githubLink: "https://github.com/Taniya23Y/Netflix-GPT",
+    image: NetflixGPTImg,
   },
 
   {
@@ -99,6 +123,29 @@ const portfolioProjects = [
   },
 
   {
+    tags: ["React, ", "FireBase, ", "Stripe-payments, ", "Parcel, ", "Jest"],
+    year: "2024",
+    title: "DineTaste",
+    results: [
+      {
+        title:
+          "DineTaste lets users view restaurants and browse their live menu fetched from Swiggy’s API.",
+      },
+      {
+        title:
+          "🛒 Users can add or remove items from cart with working discount functionality.",
+      },
+      {
+        title:
+          "⚛️ Built with React, Parcel, Redux Toolkit, and Tailwind CSS with key learnings in hooks.",
+      },
+    ],
+    projectLink: "https://dine-taste.vercel.app/",
+    githubLink: "https://github.com/Taniya23Y/DineTaste",
+    image: DineTasteImg,
+  },
+
+  {
     tags: ["Javascript, ", "Gsap, ", "Locomotive-scroll, ", "Design"],
     year: "2023",
     title: "DuoStudio-Clone",
@@ -124,7 +171,7 @@ const portfolioProjects = [
       "React Rating, ",
       "React Icons",
     ],
-    year: "2024",
+    year: "2025",
     title: "My-Portfolio",
     results: [
       {
@@ -159,29 +206,6 @@ const portfolioProjects = [
     projectLink: "https://Razorpay-clone-Project.netlify.app",
     githubLink: "https://github.com/Taniya23Y/Razorpay.com-clone",
     image: RazorpayImg,
-  },
-
-  {
-    tags: ["React, ", "FireBase, ", "Stripe-payments, ", "Parcel, ", "Jest"],
-    year: "2023",
-    title: "DineTaste",
-    results: [
-      {
-        title:
-          "DineTaste lets users view restaurants and browse their live menu fetched from Swiggy’s API.",
-      },
-      {
-        title:
-          "🛒 Users can add or remove items from cart with working discount functionality.",
-      },
-      {
-        title:
-          "⚛️ Built with React, Parcel, Redux Toolkit, and Tailwind CSS with key learnings in hooks.",
-      },
-    ],
-    projectLink: "https://dine-taste.vercel.app/",
-    githubLink: "https://github.com/Taniya23Y/DineTaste",
-    image: DineTasteImg,
   },
 ];
 
