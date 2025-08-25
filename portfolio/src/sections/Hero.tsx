@@ -179,7 +179,7 @@ export const HeroSection = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide"
           >
-            Building Exceptional User Experiences
+            Building Scalable MERN Web Solutions
           </motion.h1>
           {/* Tagline */}
           <motion.p
@@ -188,8 +188,8 @@ export const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.6 }}
           >
-            Crafting exceptional digital experiences with clean code and
-            thoughtful design
+            Specializing in MERN stack development, elegant UI design, and GenAI
+            integration
           </motion.p>
         </div>
 

@@ -24,11 +24,11 @@ export default function Home() {
       <HeroSection />
       <ResumePreview />
       <AboutSection />
-      <EducationSection />
-      <Skills />
-      <Experience />
       <ProjectsSection />
       <TapeSection />
+      <Skills />
+      <EducationSection />
+      <Experience />
       <SocialLinkSection />
       <TestimonialsSection />
       <CertificationsSection />
