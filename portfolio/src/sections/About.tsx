@@ -97,7 +97,6 @@ export const AboutSection = () => {
           viewport={{ once: true }}
           className="relative z-10"
         >
-          {/* Section Header */}
           <SectionHeader
             tagText="Get To Know Me"
             tagIcon="solar:user-heart-bold"
@@ -108,17 +107,10 @@ export const AboutSection = () => {
             centered={true}
           />
 
-          {/* Main Content Grid */}
           <div className="mt-10 grid lg:grid-cols-12 gap-6 md:gap-8 items-start px-3">
-            {/* Main Profile Section */}
             <motion.div variants={itemVariants} className="lg:col-span-8">
               <div className="space-y-6 md:space-y-8">
-                {/* Introduction Card */}
-                <div
-                  className="relative p-4 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-green-950/30 to-green-900/20 backdrop-blur-xl border  border-green-800/30 shadow-2xl flex flex-col"
-                  //  className="relative p-4 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-[#1d1d1d] backdrop-blur-xl border border-white/30  shadow-2xl"
-                >
-                  {/* Decorative Elements */}
+                <div className="relative p-4 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-green-950/30 to-green-900/20 backdrop-blur-xl border  border-green-800/30 shadow-2xl flex flex-col">
                   <div className="absolute top-4 md:top-6 right-4 md:right-6 w-3 md:w-4 h-3 md:h-4 bg-green-400 rounded-full animate-pulse"></div>
                   <div className="absolute top-4 md:top-6 right-10 md:right-14 w-2 md:w-3 h-2 md:h-3 bg-blue-400 rounded-full animate-pulse delay-300"></div>
                   <div className="hidden md:block absolute top-6 right-20 w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-500"></div>
@@ -144,7 +136,6 @@ export const AboutSection = () => {
                       </p>
                     </div>
 
-                    {/* Expanded About Content */}
                     <div className="space-y-3 md:space-y-4 border-t border-gray-700/50 pt-4 md:pt-6">
                       <p className="text-sm md:text-base text-gray-300 leading-relaxed">
                         I specialize in building scalable web and mobile
@@ -160,7 +151,6 @@ export const AboutSection = () => {
                       </p>
                     </div>
 
-                    {/* Skills Highlight */}
                     <div className="border-t border-gray-700/50 pt-4 md:pt-6">
                       <h4 className="font-bold text-white mb-3 md:mb-4 flex items-center gap-2">
                         <Icon
@@ -173,16 +163,17 @@ export const AboutSection = () => {
                       </h4>
                       <div className="flex flex-wrap gap-2 md:gap-3">
                         {[
+                          "JavaScript",
                           "React",
                           "Next.js",
                           "TypeScript",
                           "Node.js",
-                          "Python",
+                          "SQL",
+                          "Java",
                           "AI Integration",
                           "AWS",
                           "UI Design",
                           "C++",
-                          "JavaScript",
                         ].map((skill, index) => (
                           <motion.span
                             key={skill}
@@ -201,9 +192,7 @@ export const AboutSection = () => {
                   </div>
                 </div>
 
-                {/* Professional Roles Grid */}
                 <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-                  {/* hobbies  */}
                   <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
                     <CardHeader
                       title="Beyond The Code"
@@ -235,12 +224,10 @@ export const AboutSection = () => {
               </div>
             </motion.div>
 
-            {/* Enhanced Sidebar */}
             <motion.div
               variants={itemVariants}
               className="lg:col-span-4 space-y-8 mt-6 lg:mt-0"
             >
-              {/* Contact Card */}
               <div className="p-4 rounded-2xl bg-gradient-to-br from-purple-950/30 to-pink-950/30 backdrop-blur-sm border border-gray-700/40 shadow-xl">
                 <h4 className="font-bold text-white mb-6 flex items-center gap-2">
                   <Icon
@@ -314,7 +301,6 @@ export const AboutSection = () => {
                 </div>
               </div>
 
-              {/* Available for Hire */}
               <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-950/30 to-cyan-950/30 backdrop-blur-sm border border-gray-700/40 shadow-xl">
                 <h4 className="font-bold text-white mb-6 flex items-center gap-2">
                   <Icon
@@ -377,7 +363,6 @@ export const AboutSection = () => {
                 </div>
               </div>
 
-              {/* my reads */}
               <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
                 <CardHeader
                   title="My Reads"

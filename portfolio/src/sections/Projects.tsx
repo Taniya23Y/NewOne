@@ -4,7 +4,8 @@ import piyushFolio from "@/assets/images/PortFolio.png";
 import tasteTrekImg from "@/assets/images/TasteTrek.png";
 import eduMeetImg from "@/assets/images/edumeetImg1.png";
 import DuoStudioImg from "@/assets/images/DuoStudio.png";
-import codeCompilerImg from "@/assets/images/CodeCompiler.png";
+import codeCompilerImg from "@/assets/images/codeEditor.png";
+import multihomeImg from "@/assets/images/multihome.png";
 import RazorpayImg from "@/assets/images/Razorpay.png";
 import MyPortfolioImg from "@/assets/images/MyPortfolioImg.png";
 import DineTasteImg from "@/assets/images/DineTaste.png";
@@ -18,6 +19,45 @@ import { useSectionInView } from "@/lib/hooks";
 import LinkPreviewWrapper from "@/components/LinkPreviewWrapper";
 
 const portfolioProjects = [
+  {
+    tags: ["Javascript, ", "React, ", "node.js, ", "MongoDB"],
+    year: "2025",
+    title: "MultiHome",
+    results: [
+      {
+        title:
+          "🏡 Property E-commerce Platform: Browse, rent, and manage homes like online products.",
+      },
+      {
+        title:
+          "🛂 Unified Living Ecosystem: Connects owners, tenants, and helpers in one system.",
+      },
+      {
+        title:
+          "⭐ Smart & Scalable: Secure payments, service bookings, and future AI features.",
+      },
+    ],
+    projectLink: "https://multihome.vercel.app",
+    githubLink: "https://github.com/Taniya23Y/MultiHome-Expletus",
+    image: multihomeImg,
+  },
+
+  {
+    tags: ["React, ", "TypeScript, ", "MongoDB, ", "Tailwind, ", "Shadcn"],
+    year: "2024",
+    title: "Code.Compiler",
+    results: [
+      {
+        title:
+          "Elevate your coding experience with CodeCompiler 💻, enabling real-time HTML, CSS, and JS coding, sharing.",
+      },
+      { title: "Seamlessly save, share, edit and download your projects." },
+    ],
+    projectLink: "https://code-compiler-murex.vercel.app/",
+    githubLink: "https://github.com/Taniya23Y/Code-Editor",
+    image: codeCompilerImg,
+  },
+
   {
     tags: ["Javascript, ", "React, ", "Redux-toolkit, ", "MongoDB"],
     year: "2025",
@@ -39,22 +79,6 @@ const portfolioProjects = [
     projectLink: "https://edumeet-learn.vercel.app",
     githubLink: "https://github.com/Taniya23Y/Next-Edumeet",
     image: eduMeetImg,
-  },
-
-  {
-    tags: ["React, ", "TypeScript, ", "MongoDB, ", "Tailwind, ", "Shadcn"],
-    year: "2024",
-    title: "Code.Compiler",
-    results: [
-      {
-        title:
-          "Elevate your coding experience with CodeCompiler 💻, enabling real-time HTML, CSS, and JS coding, sharing.",
-      },
-      { title: "Seamlessly save, share, edit and download your projects." },
-    ],
-    projectLink: "https://Code-Compiler-Project.vercel.app",
-    githubLink: "https://github.com/Taniya23Y/Code.Compiler.Project",
-    image: codeCompilerImg,
   },
 
   {

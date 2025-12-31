@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const HASHNODE_API = "https://gql.hashnode.com/";
-const USERNAME = "Taniya23"; // Hashnode username
+const USERNAME = "Taniya23";
 
 interface Blog {
   title: string;
@@ -51,10 +51,9 @@ export function useHashCode() {
         });
 
         const data = await response.json();
-        console.log("Hashnode API Response:", data); // Debugging Line
+        console.log("Hashnode API Response:", data);
 
         if (data?.data?.user?.publications?.edges?.length > 0) {
-          // Extract posts from the first publication
           const posts = data.data.user.publications.edges[0].node.posts.edges;
 
           const formattedBlogs = posts.map((post: any) => ({

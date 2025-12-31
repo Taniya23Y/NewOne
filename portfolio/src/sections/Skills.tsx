@@ -91,8 +91,6 @@ export const Skills = () => {
           </div>
         </div>
 
-        {/* ****************************************** */}
-
         <div
           className={`${
             typeof window !== "undefined" && window.innerWidth < 768

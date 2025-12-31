@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Calistoga, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
-import ActiveSectionContextProvider from "@/context/active-section-context"; // import your context provider
+import ActiveSectionContextProvider from "@/context/active-section-context";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({

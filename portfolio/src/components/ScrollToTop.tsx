@@ -32,12 +32,10 @@ export function ScrollToTop() {
           className="relative p-3 bg-[#1d1d1d] text-white rounded-full shadow-md hover:bg-[#D2ACF7] hover:text-black transition group"
           aria-label="Scroll to top"
         >
-          {/* Circular Progress Ring */}
           <svg
             className="absolute inset-0 w-full h-full -rotate-90"
             viewBox="0 0 48 48"
           >
-            {/* Background Circle */}
             <circle
               cx="24"
               cy="24"
@@ -46,7 +44,6 @@ export function ScrollToTop() {
               stroke="rgba(255, 255, 255, 0.2)"
               strokeWidth="2"
             />
-            {/* Progress Circle */}
             <circle
               cx="24"
               cy="24"
@@ -65,7 +62,6 @@ export function ScrollToTop() {
 
           <ArrowUp className="w-5 h-5 relative z-10" />
 
-          {/* Tooltip */}
           <span className="absolute top-1/2 right-full -translate-y-1/2 ml-3 px-2 py-1 text-sm text-black bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">
             Scroll to 👆 top!
           </span>

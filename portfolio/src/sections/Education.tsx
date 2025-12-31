@@ -65,7 +65,6 @@ const education = [
 export const EducationSection = () => {
   return (
     <div className="container text-[#22242d] py-20 md:py-24" id="education">
-      {/* Section Header */}
       <SectionHeader
         tagIcon="mdi:school-outline"
         tagText="Academic Journey"
@@ -76,7 +75,6 @@ export const EducationSection = () => {
         description="A journey of knowledge, skills, and growth — here’s how my academic background shaped my career path."
       />
 
-      {/* Education Timeline */}
       <div className="mt-12 space-y-8 relative">
         {education.map((edu, index) => (
           <motion.div
@@ -91,7 +89,6 @@ export const EducationSection = () => {
               border: `1px solid ${edu.borderColor}`,
             }}
           >
-            {/* Header Row */}
             <div className="flex items-center gap-4 mb-4">
               <div
                 className={`p-3 rounded-xl bg-gradient-to-r ${edu.institutionColor} shadow-lg`}
@@ -110,10 +107,8 @@ export const EducationSection = () => {
               </div>
             </div>
 
-            {/* Description */}
             <p className="text-white mb-4">{edu.description}</p>
 
-            {/* Achievements */}
             {edu.achievements.length > 0 && (
               <div className="mb-4">
                 <h4 className="text-sm font-semibold text-white mb-2">
@@ -127,7 +122,6 @@ export const EducationSection = () => {
               </div>
             )}
 
-            {/* Technologies */}
             {edu.technologies.length > 0 && (
               <div>
                 <h4 className="text-sm font-semibold text-white mb-2">

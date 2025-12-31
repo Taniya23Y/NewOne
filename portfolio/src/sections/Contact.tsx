@@ -87,12 +87,10 @@ export const ContactSection = () => {
         description="Have a question, project idea, or just want to say hi? Feel free to reach out and I’ll get back to you as soon as possible."
       />
 
-      {/* Contact Info & Form */}
       <SectionBackground>
         <section>
           <div className="container mx-auto px-4 bg-[#152D24] rounded-2xl border border-[#33785f]">
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
-              {/* Left Column: Why Work With Me */}
               <div className="p-7 md:p-8 rounded-lg">
                 <div>
                   <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
@@ -162,7 +160,6 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              {/* Right Column: Contact Form */}
               <div className="p-6 md:p-8 rounded-lg ">
                 <motion.section
                   id="contact"
@@ -173,7 +170,6 @@ export const ContactSection = () => {
                   className="mb-16"
                 >
                   <div className="max-w-4xl mx-auto">
-                    {/* Contact Form */}
                     <motion.div
                       className="mb-12"
                       initial={{ opacity: 0, y: 30 }}
@@ -377,7 +373,6 @@ export const ContactSection = () => {
                       </form>
                     </motion.div>
 
-                    {/* Alternative Contact Methods */}
                     <motion.div
                       className="text-center"
                       initial={{ opacity: 0, y: 20 }}

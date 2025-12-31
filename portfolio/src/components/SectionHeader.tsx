@@ -23,7 +23,6 @@ export const SectionHeader = ({
   return (
     <>
       <div className="flex justify-center items-center flex-col">
-        {/* Tag Badge */}
         <motion.div
           className={`inline-flex items-center gap-2 px-4 py-2 bg-black/10 border border-white/30 rounded-full mb-4 md:mb-6 ${
             centered ? "justify-center" : ""
@@ -42,7 +41,6 @@ export const SectionHeader = ({
           {eyebrow}
         </p>
 
-        {/* Underline */}
         {showUnderline && (
           <motion.div
             className={`h-1 md:h-1.2 lg:h-1.3 bg-gradient-to-l from-[#D2ACF7] via-purple-300 to-purple-200 rounded-full mb-3 md:mb-4 lg:mb-7 ${

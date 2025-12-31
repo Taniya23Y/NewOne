@@ -137,7 +137,6 @@ export const HeroSection = () => {
       </div>
 
       <div className="container relative z-10">
-        {/* image and green btn */}
         <motion.div
           className="flex flex-col items-center"
           initial={{ opacity: 0, y: 20 }}
@@ -159,9 +158,7 @@ export const HeroSection = () => {
           </div>
         </motion.div>
 
-        {/* heading and para */}
         <div className="max-w-lg mx-auto">
-          {/* Name */}
           <motion.h1
             className="text-5xl md:text-6xl font-bold mb-4 text-center tracking-wide"
             initial={{ opacity: 0, y: 20 }}
@@ -181,7 +178,7 @@ export const HeroSection = () => {
           >
             Building Scalable MERN Web Solutions
           </motion.h1>
-          {/* Tagline */}
+
           <motion.p
             className="mt-4 text-center text-lg md:text-xl text-[#CFE4FF] mb-10 max-w-2xl mx-auto leading-relaxed font-spaceGrotesk"
             initial={{ opacity: 0, y: 20 }}
@@ -193,7 +190,6 @@ export const HeroSection = () => {
           </motion.p>
         </div>
 
-        {/* Social Links - keeping exactly the same */}
         <motion.div
           className="flex flex-wrap gap-3 justify-center mb-12"
           initial={{ opacity: 0, y: 20 }}

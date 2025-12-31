@@ -19,7 +19,7 @@ const words = [
 
 export const TapeSection = () => {
   return (
-    <div className="py-20 lg:py-28 pt-[10rem] overflow-x-clip ">
+    <div className="py-20 lg:py-28 pt-[15rem] overflow-x-clip ">
       <div className="bg-gradient-to-r from-emerald-300 to-sky-400  -rotate-3 -mx-1">
         <div className="flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <div className="flex flex-none gap-4 py-3">

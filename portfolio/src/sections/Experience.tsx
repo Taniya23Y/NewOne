@@ -4,15 +4,15 @@ import { Icon } from "@iconify/react";
 
 const experience = [
   {
-    role: "Mern Stack Developer",
-    company: "TechCodes",
-    period: "February 2025 — July 2025",
-    type: "Remote",
+    role: "Mern Stack Developer Intern",
+    company: "Expletus Technologies private limited",
+    period: "October 2025 — December 2025",
+    type: "On-Site",
     companyIcon: "mdi:code-tags",
     companyColor: "from-yellow-500 to-yellow-600",
     borderLeftColor: "#DFA406",
     description:
-      "TechCodes is a remote-first software development company where I worked as a MERN Stack Developer, contributing to the design, development, user-focused web applications.",
+      "Expletus Technologies is a premier software development company offering Digital solutions, customer-oriented Web Design, Software Development and Mobile applications where I worked as a MERN Stack Developer, contributing to the design, development, user-focused web applications.",
     achievements: [
       "My first taste of professional development! Got to work with the MERN stack and build stuff that users would interact with.",
       "The highlight? Building a real-time dashboard that boosted user engagement by 40% (yeah, I was pretty proud of that).",
@@ -73,14 +73,12 @@ export const Experience = () => {
         <div className="relative border-l-4 border-gray-300 mt-10">
           {experience.map((exp, idx) => (
             <div key={idx} className="mb-12 ml-6 relative">
-              {/* Timeline Icon */}
               <span
                 className={`absolute -left-[3.2rem] md:-left-[3.5rem] top-5  flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r ${exp.companyColor} text-white shadow-lg`}
               >
                 <Icon icon={exp.companyIcon} className="text-3xl" />
               </span>
 
-              {/* Content Card */}
               <div
                 className={`bg-black rounded-lg shadow-lg p-6 border-l-4 border-transparent  transition-colors duration-300`}
                 style={{

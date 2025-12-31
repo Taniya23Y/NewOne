@@ -12,7 +12,6 @@ export function GithubStarsButton() {
         aria-label="Star on GitHub"
       >
         <SiGithub className="w-[1.7rem] h-[1.7rem] relative z-10 hover:text-[#D2ACF7]" />
-        {/* Tooltip */}
         <span className="absolute top-1/2 right-full -translate-y-1/2 ml-3 px-2 py-1 text-sm text-black bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">
           Give it a ⭐ on GitHub!
         </span>

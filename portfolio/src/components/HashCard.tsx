@@ -14,7 +14,6 @@ export function HashCard({ title, brief, slug, publishedAt }: BlogCardProps) {
       className="group block overflow-hidden rounded-lg border border-gray-700 bg-gray-900 shadow hover:border-blue-400 hover:shadow-lg transition duration-300"
     >
       <div className="flex flex-col lg:flex-row">
-        {/* Content Section */}
         <div className="p-5 flex flex-col justify-between lg:w-full">
           <div>
             <h3 className="text-lg lg:text-xl font-semibold text-white leading-snug line-clamp-2 group-hover:text-blue-400 transition-colors">

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-// Define more specific interfaces for your data structure
 interface Skills {
   FrontEndOptions: string[];
   BackendOptions: string[];

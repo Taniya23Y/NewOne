@@ -33,14 +33,14 @@ const bgGradients = [
 
 export function ResumePreview() {
   const { scrollY } = useScroll();
-  const [windowHeight, setWindowHeight] = useState(800); // Default fallback
+  const [windowHeight, setWindowHeight] = useState(800);
   const [colorIndex, setColorIndex] = useState(0);
 
   useEffect(() => {
     setWindowHeight(window.innerHeight);
     const interval = setInterval(() => {
       setColorIndex((prev) => (prev + 1) % badgeGradients.length);
-    }, 2000); // change every 2 seconds
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
@@ -62,10 +62,6 @@ export function ResumePreview() {
 
         <motion.div className="relative max-w-5xl w-full" style={{ scale }}>
           <div className="relative bg-gradient-to-br from-green-900/20 to-green-950/30 backdrop-blur-xl border border-green-800/30 shadow-2xl rounded-3xl p-6 md:p-12">
-            {/* <div
-            className={`relative bg-gradient-to-br ${bgGradients[colorIndex]} backdrop-blur-xl shadow-2xl rounded-3xl p-6 md:p-12`}
-          > */}
-            {/* Resume Header */}
             <div className="border-b border-border/50 pb-6 md:pb-8 mb-6 md:mb-8">
               <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 mb-4 md:mb-6">
                 <div className="w-16 h-16 md:w-20 md:h-20 bg-linear-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg mx-auto md:mx-0">
@@ -100,18 +96,15 @@ export function ResumePreview() {
                     </div>
                     <div className="hidden md:flex items-center gap-1 justify-end">
                       <Globe className="h-3 w-3" />
-                      <span>taniyay-portfolio.vercel</span>
+                      <span>taniyay-portfolio.vercel.app</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Resume Content Preview - Responsive Layout */}
             <div className="grid md:grid-cols-2 gap-6 md:gap-10 mb-6 md:mb-8">
-              {/* Left Column */}
               <div className="space-y-6 md:space-y-8">
-                {/* Experience Section */}
                 <div>
                   <h4 className="font-bold mb-4 md:mb-6 text-foreground/90 text-base md:text-lg border-b border-border/30 pb-2 flex items-center gap-2">
                     <Briefcase className="h-4 w-4" />
@@ -120,10 +113,10 @@ export function ResumePreview() {
                   <div className="space-y-4 md:space-y-6">
                     <div className="border-l-2 border-blue-500/30 pl-3 md:pl-4">
                       <h5 className="font-semibold text-sm md:text-base mb-1">
-                        Mern Stack Developer{" "}
+                        Mern Stack Developer Intern{" "}
                       </h5>
                       <p className="text-xs md:text-sm text-muted-foreground mb-2">
-                        TechCode • Feb 2025 - July 2025
+                        Expletus • Oct 2025 - Dec 2025
                       </p>
                       <ul className="text-xs md:text-sm text-muted-foreground/90 space-y-1 hidden md:block">
                         <li>
@@ -142,7 +135,6 @@ export function ResumePreview() {
                   </div>
                 </div>
 
-                {/* Education Section - Hidden on mobile */}
                 <div className="hidden md:block">
                   <h4 className="font-bold mb-6 text-foreground/90 text-lg border-b border-border/30 pb-2 flex items-center gap-2">
                     <GraduationCap className="h-4 w-4" />
@@ -156,12 +148,11 @@ export function ResumePreview() {
                       SVCE, Indore • 2021 - 2025
                     </p>
                     <p className="text-sm text-muted-foreground/90">
-                      Percentage: 81% • DSA 300+ problems
+                      Percentage: 81% • DSA 250+ problems
                     </p>
                   </div>
                 </div>
 
-                {/* Achievements Section - Moved from right column */}
                 <div className="hidden md:block">
                   <h4 className="font-bold mb-6 text-foreground/90 text-lg border-b border-border/30 pb-2 flex items-center gap-2">
                     <Award className="h-4 w-4" />
@@ -180,9 +171,7 @@ export function ResumePreview() {
                 </div>
               </div>
 
-              {/* Right Column */}
               <div className="space-y-6 md:space-y-8">
-                {/* Skills Section */}
                 <div>
                   <h4 className="font-bold mb-4 md:mb-6 text-foreground/90 text-base md:text-lg border-b border-border/30 pb-2 flex items-center gap-2">
                     <Code className="h-4 w-4" />
@@ -249,7 +238,6 @@ export function ResumePreview() {
                   </div>
                 </div>
 
-                {/* Projects Section - Simplified on mobile */}
                 <div className="hidden md:block">
                   <h4 className="font-bold mb-6 text-foreground/90 text-lg border-b border-border/30 pb-2 flex items-center gap-2">
                     <FolderOpen className="h-4 w-4" />
@@ -286,7 +274,7 @@ export function ResumePreview() {
                           Code Mirror
                         </span>
                         <span className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">
-                          Nextjs
+                          React.js
                         </span>
                         <span className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">
                           Node.js
@@ -299,7 +287,6 @@ export function ResumePreview() {
             </div>
           </div>
 
-          {/* Enhanced Floating badge*/}
           <div
             className={`absolute -top-4 -left-4 md:-top-6 md:-left-6 bg-gradient-to-r ${badgeGradients[colorIndex]} text-white px-3 py-2 md:px-4 md:py-2 rounded-lg md:rounded-xl font-semibold shadow-lg text-xs md:text-sm flex items-center gap-1 md:gap-2 transition-colors duration-500`}
           >

@@ -152,7 +152,6 @@ export default function CertificationsSection() {
         viewport={{ once: true }}
         className="mb-16 md:mb-24 lg:mb-32 relative overflow-hidden"
       >
-        {/* Enhanced Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-full blur-3xl" />
         </div>
@@ -187,7 +186,6 @@ export default function CertificationsSection() {
                 className="group h-full"
               >
                 <div className="h-full bg-black/70  backdrop-blur-sm rounded-2xl border border-gray-300  hover:border-gray-400  transition-all duration-300 overflow-hidden">
-                  {/* Header with gradient - keeping this as requested */}
                   <div
                     className={`h-20 flex items-center justify-between bg-[#1d1d1d] px-4 ${cert.color} relative overflow-hidden`}
                   >
@@ -217,16 +215,13 @@ export default function CertificationsSection() {
                   </div>
 
                   <div className="p-6 relative">
-                    {/* Subtle decorative elements */}
                     <div className="absolute top-4 right-4 w-2 h-2 bg-blue-400/30 rounded-full animate-pulse"></div>
                     <div className="absolute top-6 right-8 w-1 h-1 bg-purple-400/40 rounded-full animate-pulse delay-500"></div>
 
-                    {/* Certificate Title */}
                     <h3 className="text-lg font-bold text-white mb-4 leading-tight group-hover:text-gray-100 transition-colors">
                       {cert.title}
                     </h3>
 
-                    {/* Provider Info */}
                     <div className="space-y-3 mb-6 :bg-gray-800/30 rounded-xl p-4 border border-gray-700/30">
                       <div className="flex items-center gap-3 text-sm">
                         <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-md flex items-center justify-center">
@@ -278,7 +273,6 @@ export default function CertificationsSection() {
                       </div>
                     </div>
 
-                    {/* Skills */}
                     <div className="mb-6">
                       <div className="flex items-center gap-2 mb-3">
                         <div className="w-4 h-4 bg-gradient-to-r from-amber-500 to-orange-500 rounded-md flex items-center justify-center">
@@ -305,7 +299,6 @@ export default function CertificationsSection() {
                       </div>
                     </div>
 
-                    {/* Credential ID */}
                     <div className="flex items-center justify-between pt-4 border-t border-gray-700/50">
                       <Link
                         href={`${cert.credentialCertificate}`}
@@ -346,7 +339,6 @@ export default function CertificationsSection() {
             ))}
           </motion.div>
 
-          {/* Enhanced Summary Stats */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -388,7 +380,6 @@ export default function CertificationsSection() {
         </div>
       </motion.section>
 
-      {/* Enhanced Certificate Preview Modal */}
       <AnimatePresence>
         {selectedCertificate && (
           <motion.div
@@ -405,7 +396,6 @@ export default function CertificationsSection() {
               className="bg-[#1d1d1d] top-8 backdrop-blur-xl rounded-3xl shadow-2xl max-w-4xl max-h-[90vh] overflow-hidden relative border border-gray-700/30"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Modal Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-700/50 backdrop-blur-sm">
                 <div>
                   <h3 className="text-xl md:text-2xl font-bold text-white mb-1">
@@ -431,7 +421,6 @@ export default function CertificationsSection() {
                 </motion.button>
               </div>
 
-              {/* Certificate Image */}
               <div className="p-6 flex justify-center bg-black">
                 <div className="relative max-w-full overflow-hidden shadow-lg border border-gray-700/50">
                   <Image
@@ -444,7 +433,6 @@ export default function CertificationsSection() {
                 </div>
               </div>
 
-              {/* Modal Footer */}
               <div className="flex items-center justify-between p-6 border-t border-gray-700/50 backdrop-blur-sm">
                 <div className="text-sm text-gray-400 font-medium">
                   Credential ID:{" "}

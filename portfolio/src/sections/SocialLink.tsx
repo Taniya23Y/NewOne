@@ -124,7 +124,6 @@ export function SocialLinkSection() {
     return null;
   }
 
-  // Loading and error states
   if (loadings) {
     return (
       <div className="text-center py-8 text-lg text-gray-500 animate-pulse">
@@ -154,7 +153,6 @@ export function SocialLinkSection() {
       />
 
       <SectionBackground>
-        {/* github */}
         <section id="github">
           <div className="mx-auto max-w-6xl px-8">
             <div className="mb-3 flex gap-4">
@@ -231,12 +229,10 @@ export function SocialLinkSection() {
           </div>
         </section>
 
-        {/* dash line  */}
         <div className="mt-6 mb-6">
           <div className="w-[95%] mx-auto border-t-2 border-dashed border-gray-300"></div>
         </div>
 
-        {/* Leetcode  */}
         <div className="container">
           <section className="py-5" id="leetcode">
             <h2 className="text-xl font-semibold mb-4">leetcode.</h2>
@@ -336,12 +332,10 @@ export function SocialLinkSection() {
           </section>
         </div>
 
-        {/* dash line  */}
         <div className="mt-6 mb-6">
           <div className="w-[95%] mx-auto border-t-2 border-dashed border-gray-300"></div>
         </div>
 
-        {/* HashCode  */}
         <section id="blogs">
           <div className="container mx-auto px-8">
             <div className="mb-3 flex gap-4">
@@ -360,7 +354,6 @@ export function SocialLinkSection() {
                   ))}
                 </div>
 
-                {/* "See All Blogs" Button */}
                 <div className="mt-10 text-center">
                   <a
                     href="https://taniya23y.hashnode.dev/"

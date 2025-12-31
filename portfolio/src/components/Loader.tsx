@@ -4,7 +4,7 @@ export default function Loader() {
   const loaderStyle: React.CSSProperties = {
     display: "block",
     width: "130px",
-    height: "4px", // equivalent to --height-of-loader
+    height: "4px",
     borderRadius: "30px",
     backgroundColor: "rgba(0, 0, 0, 0.2)",
     position: "relative",
@@ -13,7 +13,7 @@ export default function Loader() {
   const loaderBeforeStyle: React.CSSProperties = {
     content: '""',
     position: "absolute",
-    backgroundColor: "#048985", // equivalent to --loader-color
+    backgroundColor: "#048985",
     top: "0",
     left: "0",
     width: "0%",

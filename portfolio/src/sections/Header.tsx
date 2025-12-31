@@ -26,7 +26,6 @@ export const Header = () => {
     <nav className="fixed top-0 md:top-4 w-full z-50">
       <div className="md:max-w-fit md:border-[0.1px] md:border-gray-500 md:rounded-full mx-auto px-7 py-2 bg-[#1D1D1D] backdrop-blur-3xl">
         <div className="flex justify-between items-center gap-10 font-spaceGrotesk">
-          {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -35,7 +34,6 @@ export const Header = () => {
             <a href="#home"> Taniya Y.</a>
           </motion.div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
               <motion.a
@@ -52,7 +50,6 @@ export const Header = () => {
             ))}
           </div>
 
-          {/* Mobile Menu */}
           <div className="md:hidden relative">
             <AnimatePresence>
               {!isMenuOpen && (
@@ -63,7 +60,6 @@ export const Header = () => {
                   onClick={() => setIsMenuOpen(true)}
                   className="w-10 h-10 flex items-center justify-center rounded-full bg-[#1e1d1d] border border-gray-50 hover:bg-[#2c2c2c] transition"
                 >
-                  {/* Menu icon */}
                   <div className="space-y-1.5">
                     <span className="block w-5 h-0.5 bg-white"></span>
                     <span className="block w-5 h-0.5 bg-white"></span>
@@ -73,7 +69,6 @@ export const Header = () => {
               )}
             </AnimatePresence>
 
-            {/* Expanding Menu Box */}
             <AnimatePresence>
               {isMenuOpen && (
                 <motion.div
@@ -83,7 +78,6 @@ export const Header = () => {
                   transition={{ duration: 0.3 }}
                   className="absolute right-0 top-0 bg-white border border-black rounded-lg shadow-lg p-8 w-[12rem]"
                 >
-                  {/* Close Icon */}
                   <div className="flex justify-end">
                     <button
                       onClick={() => setIsMenuOpen(false)}
@@ -106,7 +100,6 @@ export const Header = () => {
                     </button>
                   </div>
 
-                  {/* Menu Items */}
                   <ul className="flex flex-col gap-4 mt-6">
                     {navItems.map((item, i) => (
                       <motion.li
