@@ -3,6 +3,7 @@ import { Inter, Calistoga, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({
@@ -37,10 +38,11 @@ export default function RootLayout({
           inter.variable,
           calistoga.variable,
           spaceGrotesk.variable,
-          "bg-black text-white antialiased font-sans"
+          "bg-black text-white antialiased font-sans",
         )}
       >
         <ActiveSectionContextProvider>{children}</ActiveSectionContextProvider>
+        <Analytics />
       </body>
     </html>
   );

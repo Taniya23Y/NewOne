@@ -6,6 +6,7 @@ import eduMeetImg from "@/assets/images/edumeetImg1.png";
 import DuoStudioImg from "@/assets/images/DuoStudio.png";
 import codeCompilerImg from "@/assets/images/codeEditor.png";
 import multihomeImg from "@/assets/images/multihome.png";
+import aiInterviewImg from "@/assets/images/AI-Interview-Project.png";
 import RazorpayImg from "@/assets/images/Razorpay.png";
 import MyPortfolioImg from "@/assets/images/MyPortfolioImg.png";
 import DineTasteImg from "@/assets/images/DineTaste.png";
@@ -19,6 +20,27 @@ import { useSectionInView } from "@/lib/hooks";
 import LinkPreviewWrapper from "@/components/LinkPreviewWrapper";
 
 const portfolioProjects = [
+  {
+    tags: ["Javascript, ", "React, ", "LLM, ", "OpenAI"],
+    year: "2026",
+    title: "AI-Interview",
+    results: [
+      {
+        title:
+          "🧠 Practice role-based mock interviews powered by AI with dynamic follow-up questions.",
+      },
+      {
+        title:
+          "🎯 Users can choose their job role & experience level, to generate interview questions.",
+      },
+      {
+        title: "🎤 Simulates real interviews with voice interaction.",
+      },
+    ],
+    projectLink: "https://ai-interview-agent-woad.vercel.app/",
+    githubLink: "https://github.com/Taniya23Y/Ai-Interview_Agent",
+    image: aiInterviewImg,
+  },
   {
     tags: ["Javascript, ", "React, ", "node.js, ", "MongoDB"],
     year: "2025",
