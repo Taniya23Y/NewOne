@@ -4,6 +4,37 @@ import { Icon } from "@iconify/react";
 
 const experience = [
   {
+    role: "Full Stack Developer",
+    company: "Cubixsys Technologies Pvt. Ltd.",
+    period: "April 2026 — Present",
+    type: "On-Site",
+    companyIcon: "mdi:hospital-building",
+    companyColor: "from-blue-500 to-red-600",
+    borderLeftColor: "#8F538B",
+    description:
+      "Cubixsys Technologies Pvt. Ltd. is a software development company delivering scalable enterprise solutions. As a Full Stack Developer, I work on a microservices-based Hospital Management System (HMS), contributing to both frontend and backend development while focusing on performance, scalability, and user experience.",
+    achievements: [
+      "Working on a production-grade Hospital Management System gave me hands-on experience with microservices architecture and enterprise-level application development.",
+      "Optimized backend services, APIs, and database queries to improve system performance, reliability, and scalability across multiple HMS modules.",
+      "Collaborated in an Agile environment, delivering features, enhancements, and bug fixes through Jira-based workflows while contributing across both frontend and backend.",
+    ],
+    technologies: [
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "PostgreSQL",
+      "Microservices",
+      "REST APIs",
+      "Git",
+      "GitHub",
+      "Jira",
+      "Azure",
+    ],
+    workImage: "/certificates/cubixsys.jpg",
+  },
+  {
     role: "Mern Stack Developer Intern",
     company: "Expletus Technologies private limited",
     period: "October 2025 — December 2025",
